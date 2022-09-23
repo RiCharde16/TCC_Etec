@@ -1,0 +1,11 @@
+input{
+    width: 200px;
+    height: 25px;
+}
+label{
+    font-size: large;
+    transform: translateY(-10px);
+}
+#g_id_onload{
+    margin-top: 15px;
+}

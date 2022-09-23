@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.alinhar{
+    justify-content: center;
+}
+/* Classes reutilizaveis */
+.container{
+    display: flex;
+}
+    /* .text-white{
+        color: #fff;
+        font-family: sans-serif;
+    } */
+.bg-purple-black{
+    background-color: #1a0728;
+}
+/* Header > nav */
+header{
+    position: sticky;
+    z-index: 1;
+    /* overflow: visible; */
+    top: 0; 
+    height: 80px;
+    align-items: center;
+    padding: 0px 15px;
+}
+.container nav{
+    text-transform: uppercase;
+    font-weight: 700;
+    justify-content: space-around;
+    align-items: center;
+    /* height: fit-content */
+}
+.menu{
+    list-style: none;
+    /* padding: 10px; */
+    justify-content: space-around;
+    width: 100%;
+}
+.menu li{
+    padding: 0px 15px;
+}
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    filter: invert();
+}
+#icon-menu:hover{
+    filter: hue-rotate(170deg);
+}
+header li:hover{
+    color: rgb(195, 0, 195);
+    cursor: pointer;
+}
+header img{
+    width: 40px;
+    height: 40px;
+    filter: invert();
+    /* filter: brightness(20%); */
+    transform: rotateY(180deg);
+}
+/* main section div */
+section h1{
+    text-align: center;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-size: medium;
+}
+section h2{
+    width: 200px;
+}
+.slide{
+    transition: 1s;
+    width: 800px;
+    height: 450px;
+}
+/* Slider desginer */
+.carrosel{
+    overflow: hidden;
+    /* position: relative; */
+    width: 800px;
+    border-radius:  50px;
+    margin: auto;
+    margin-top: 50px;
+}
+.setas{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+#setas-grupo{
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* width: 100%;  */
+    transform: translateY(-240px);
+}
+
+.estilos-jogos{
+    width: 130px;
+    height: 170px;
+    border-radius: 20px;
+    background: #ddd;
+    transition: 0.1s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+.estilos-jogos img{
+    width: 130px;
+    height: 170px;
+}
+section{
+    margin: 15px;
+    padding: 15px;
+}
+.btn{
+    justify-content: center;
+}
+button{
+    text-align: center;
+}
+.img-jogos{
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #ddd;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-jogos img{
+    width: 200px;
+    height: 250px;
+}
+.img-jogos:hover{
+    transition: 1s;
+    transform: scale(0.9,0.9);
+    
+}
+.estilos-jogos:hover{
+    /* transform: translateY(-50px); */
+    transform: scale(1.1,1.1) translateY(-10px);
+}
+#btn_Mjogos{
+    background-color: #1a0129;
+    color: #fff;
+    width: 200px;
+    height: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 1s;
+}
+#btn_Mjogos:hover{
+    background-color: #fff;
+    color: #1a0129;
+}
+section div{
+    margin: 0px 5px;
+}
+/* Footer */
+footer div{
+    padding: 20px;
+    justify-content: space-around;
+    text-transform: uppercase;
+    align-items: center;
+}
+footer h3{
+    cursor: pointer;
+}
+footer h3:hover{
+    color:rgb(195, 0, 195);
+}
+footer div > div{
+    width: 200px; 
+    padding: 0;
+    justify-content: space-around;
+}
+.icon-social{
+    width: 50px;
+    height: 50px;
+    filter: invert();
+    cursor: pointer;
+}
+.icon-social:hover{
+    filter: contrast(20%);
+}
+footer{
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+}

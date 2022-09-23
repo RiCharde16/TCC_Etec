@@ -1,0 +1,116 @@
+main{
+    padding: 10px;
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
+}
+footer{
+    /* position: relative; */
+    bottom: 0;
+    margin-bottom: 0;
+}
+main div{
+    margin: 20px;
+}
+.seta_controle{
+    position: relative;
+    width: 100px;
+    filter: invert();
+}
+#controle_setas{
+    position: relative;
+    background-image: url("../img/setas_cont.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 550px;
+    left: 50px;
+    height: 500px;
+}
+#controle_setas div{
+    position: relative;
+}
+#seta1{
+    width: 140px;
+    height: 150px;
+    left: 180px;
+    top: 50px;
+    border-radius: 0px 0px 500px 500px;
+    /* background-color: aqua; */
+}
+#seta2{
+    width: 140px;
+    height: 150px;
+    left: 55px;
+    top: 25px;
+    border-radius: 0px 500px 500px 0px;
+    /* background-color: aqua; */
+}
+#seta3{
+    width: 140px;
+    height: 150px;
+    left: 310px;
+    top: -125px;
+    border-radius: 500px 0px 0px 500px;
+    /* background-color: aqua; */
+}
+#seta4{
+    width: 140px;
+    height: 150px;
+    left: 180px;
+    top: -150px;
+    border-radius: 500px 500px 0px 0px;
+    /* background-color: aqua; */
+}
+.bloco{
+    /* position: relative; */
+    margin: 0;
+    width: 100%;
+    height: 500px;
+}
+section div{
+    margin: 0;
+    /* width: auto; */
+    padding: 0;
+}
+.Teste{
+    position: relative;
+    top: -80px;
+    right: 20px;
+    font-size: 30px;
+    animation: name 1s;
+}
+@keyframes name {
+    0%{opacity: 10%;}
+    10%{opacity: 40%;}
+    100%{opacity: 100%;}
+}
+.circle{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    right: 20%;
+    color: black;
+    padding: 25px;
+    text-align: center;
+}
+.circle img{
+    width: 100%;
+    transition: 1s;
+}
+#c1{
+    top: 50%;
+}
+#c2{
+    top: 87%;
+}
+#c3{
+    right: 10%;
+    top: 68%;
+}
+#c4{
+    right: 30%;
+    top: 68%;
+}
