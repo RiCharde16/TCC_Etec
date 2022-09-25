@@ -4,9 +4,11 @@ var btn_close = document.getElementById('btn_close');
 
 menu_icon.addEventListener('click',function(){
     // menu_icon.classList.remove('active');
-    menu_col.classList.remove('active');
+    // menu_col.classList.remove('active');
+    menu_col.style.transform = "translateX(0px)"
 })
 
 btn_close.addEventListener('click',function(){
-    menu_col.classList.add('active');
+    menu_col.style.transform = "translateX(-200px)";
+   
 });
