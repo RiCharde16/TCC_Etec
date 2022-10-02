@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfNoGames</title>
+    <link rel="shortcut icon" href="img/controle-de-video-game.png" type="image/x-icon">
+    <style>
+        iframe{
+            width: 900px;
+            height: 800px;
+        }
+        #block_frame{
+            /* position: absolute; */
+            width: auto;
+            height: 800px;
+        }
+        .block{
+            position: absolute;
+            width: 900px;
+            height: 150px;
+            background-color: #000;
+            color: #fff;
+        }
+        .block:first-child{
+            padding: 50px;
+        }
+        .block:last-child{
+            top: 730px;
+            height: 150px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <link rel="stylesheet" href="CSS/menu_style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id="menu_column" class="active">
+        <!-- <img src="img/lupa-arredondada.png"> -->
+        <h1 id="btn_close">X</h1>
+        <input type="text" name="serach" id="search">
+        <ul>
+            <li class=""><a href="#jogos">JOGOS</a></li>
+            <li class=""><a href="#loja">LOJA</a></li>
+            <li class=""><a href="#sobre">SOBRE</a></li>
+            <li class=""><a href="#ajuda">AJUDA</a></li>
+        </ul>
+        
+    </div>
+    <header class="container bg-purple-black">
+        <img src="img/menu.png" alt="icon-menu" id="icon-menu">
+        <nav class="container menu">
+            <div class="container">
+                <li>Jogos</li>
+                <li>Loja</li>
+            </div>
+            <div class="container">
+                <li>Ajuda</li>
+                <a href="sobre.html">
+                    <li>Sobre</li>
+                </a>
+            </div>          
+        </nav>
+        <img src="img/lupa-arredondada.png" alt="lupa-img">
+    </header>
+        <main class="container">
+            <div id="block_frame">
+                <div class="block">
+                    <h1>Fireboy e Watergirl no Light temple</h1>
+                </div>
+                <iframe src="https://www.jogos360.com.br/fireboy_e_watergirl_no_light_temple.html" frameborder="0" scrolling="no" allowfullscreen>
+                </iframe>
+                <div class="block"></div>
+            </div>
+        </main>
+        <!-- <iframe src="https://www.jogos360.com.br/bad_ice_cream_2.html" frameborder="1"></iframe> -->
+        <!-- <iframe src="https://www.minijogos.com.br/jogo/super-mario-64" frameborder="0" scrolling="no"></iframe> -->
+        <script src="javascript/menu.js"></script>
+        <footer class="bg-purple-black">
+            <div class="container">
+                <a href="sobre.html">
+                    <h3>sobre</h3>
+                </a>
+                <div class="container">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png" alt="icon-facebook" class="icon-social"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3669/3669691.png" alt="icon-twitter" class="icon-social"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938052.png" alt="icon-instagram" class="icon-social"></a>
+                </div>
+                <a href="">
+                    <h3>ajuda</h3>
+                </a>
+            </div>
+            <div>
+                <p>&copy; 2022, R.P.D gaMes. Todos os direito reservados. R.P.D gaMEs como logo e site inc.no Brasil da America do sul.Outras marcas e nomes de produtos são marcas registradas de 
+                    seus respectivos donos. Transações para alem do Brasil são feitas através da R.P.D gaMes internacioanl
+                </p>
+            </div>
+        </footer>
+</body>
+</html>
