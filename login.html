@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Com google</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/menu_style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="p-5 text-light">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<div id="menu_column" class="active">
+   <!-- <img src="img/lupa-arredondada.png"> -->
+   <h1 id="btn_close">X</h1>
+   <input type="text" name="serach" id="search">
+   <ul>
+       <li><a href="#jogos">JOGOS</a></li>
+       <li><a href="#loja">LOJA</a></li>
+       <li><a href="#sobre">SOBRE</a></li>
+       <li><a href="#ajuda">AJUDA</a></li>
+   </ul>
+   
+</div>
+<header class="container bg-purple-black">
+   <img src="img/menu.png" alt="icon-menu" id="icon-menu">
+   <nav class="container menu">
+       <div class="container">
+           <a href="">
+               <li>Jogos</li>
+           </a>
+           <a href="">
+               <li>Loja</li>
+           </a>
+       </div>
+       <div class="container">
+           <a href="ajuda.html">
+               <li>Ajuda</li>
+           </a>
+           <a href="sobre.html">
+               <li>Sobre</li>
+           </a>
+       </div>          
+   </nav>
+   <img src="img/lupa-arredondada.png" alt="lupa-img">
+</header>   
+   <main class="border border-white text-center p-5">
+      <form method="POST" action="dados.php">
+         <h1>Login</h1> 
+         <div>
+            <label for="nome">Usuario:</label>
+            <input type="text" name="user">
+         </div>
+         <br>
+         <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha">
+         </div>
+         <br>
+         <input type="submit" value="Login">
+         <br>
+         <h3>Ou</h3>
+         <br>
+         <div id="g_id_onload"
+            data-client_id="132012896010-keem8l8iip3loramee31ar2kle4dv3vb.apps.googleusercontent.com"
+            data-login_uri="http://localhost/TCC_TESTE/dados.php"
+            data-auto_prompt="false">
+         </div>
+            <div class="g_id_signin"
+            data-type="standard"
+            data-size="large"
+            data-theme="outline"
+            data-text="sign_in_with"
+            data-shape="rectangular"
+            data-logo_alignment="left">
+         </div>
+      </form>
+   <main>
+   <footer class="bg-purple-black">
+      <div class="container">
+            <a href="sobre.html">
+               <h3>sobre</h3>
+            </a>
+            <div class="container">
+               <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png" alt="icon-facebook" class="icon-social"></a>
+               <a href="https://twitter.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3669/3669691.png" alt="icon-twitter" class="icon-social"></a>
+               <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938052.png" alt="icon-instagram" class="icon-social"></a>
+            </div>
+            <a href="ajuda.html">
+               <h3>ajuda</h3>
+            </a>
+      </div>
+      <div>
+            <p>&copy; 2022, R.P.D gaMes. Todos os direito reservados. R.P.D gaMEs como logo e site inc.no Brasil da America do sul.Outras marcas e nomes de produtos são marcas registradas de 
+               seus respectivos donos. Transações para alem do Brasil são feitas através da R.P.D gaMes internacioanl
+            </p>
+      </div>
+   </footer>
+   <script src="javascript/menu.js"></script>
+</body>
+</html>

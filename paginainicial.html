@@ -15,7 +15,7 @@
         <h1 id="btn_close">X</h1>
         <input type="text" name="serach" id="search">
         <ul>
-            <li><a href="#jogos">JOGOS</a></li>
+            <li><a href="./PHP/listagem_jogos.php">JOGOS</a></li>
             <li><a href="#loja">LOJA</a></li>
             <li><a href="#sobre">SOBRE</a></li>
             <li><a href="#ajuda">AJUDA</a></li>
@@ -26,7 +26,7 @@
         <img src="img/menu.png" alt="icon-menu" id="icon-menu">
         <nav class="container menu">
             <div class="container">
-                <a href="">
+                <a href="./PHP/listagem_jogos.php">
                     <li>Jogos</li>
                 </a>
                 <a href="">
@@ -65,44 +65,28 @@
             <h1>Qual seu estilo de jogo?</h1>
             <div class="container alinhar">
                 <div>
-                    <div class="estilos-jogos"><img src="https://i.zst.com.br/images/os-10-melhores-jogos-de-acao-para-android-em-2018-photo643089924-44-27-11.jpg" alt="action"></div>
+                    <div class="estilos-jogos"><img src="./img/action_game.svg" alt="action"></div>
                     <h1>Ação</h1>
                 </div>
                 <div>
-                    <div class="estilos-jogos"><img src="https://st2.depositphotos.com/4923421/7459/v/450/depositphotos_74592777-stock-illustration-different-characters-for-the-game.jpg" alt="RPG"></div>
+                    <div class="estilos-jogos"><img src="./img/Rpg_game.svg" alt="RPG"></div>
                     <h1>rpg</h1>
                 </div>
                 <div>
-                    <div class="estilos-jogos"><img src="https://i.zst.com.br/images/os-13-melhores-jogos-de-acao-e-aventura-para-videogame-em-2019-photo193408540-44-9-3c.jpg" alt="adventure"></div>
+                    <div class="estilos-jogos"><img src="./img/adventure_game.svg" alt="adventure"></div>
                     <h1>aventura</h1>
                 </div>
                 <div>
-                    <div class="estilos-jogos"><img src="https://mundoandroid.com.br/wp-content/uploads/2022/02/5-Melhores-jogos-de-simulador-de-vida-para-Android.png" alt="simulator"></div>
-                    <h1>simulação</h1>
-                </div>
-                <div>
-                    <div class="estilos-jogos"><img src="https://cdn.icon-icons.com/icons2/1264/PNG/512/1496969525-puzzle-pieces-2_84693.png" alt="puzzle"></div>
+                    <div class="estilos-jogos"><img src="./img/puzzle_game.svg" alt="puzzle" style="margin: 0px 0px 0px 15px"></div>
                     <h1>puzzle</h1>
                 </div>
                 <div>
-                    <div class="estilos-jogos"><img src="https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec=s48-rw" alt="party game"></div>
+                    <div class="estilos-jogos"><img src="./img/party_games.svg" alt="party game"></div>
                     <h1>party games</h1>
                 </div>
                 <div>
-                    <div class="estilos-jogos"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAADpCAMAAABx2AnXAAACGVBMVEVaq+MREiT/fwD29vby8vKSRyo3QEX/1ypOk8QHAAC44wCHQSdbrOP/gQAxOz3X2djodQA6jNbg4uFJmdsjLzX/fADj5eTMzc3///8AABrT09NPoN0AABeMQyhMnd0sNjwAABNTMg6QQiP3fAD/1xyNOhO0trOq1AA5i9V7QwxMpuJWsOzExMS3Xwjx8vbHq6KUlJptbnbhh0U0JRBCKw5zQAwmIRDNagZ3QgzRawdiOQ2oc2F8uebZysWXTwuhVApKUlZolr+AhYivf28dKTCFJgDf4emKMwD129jtlwHw+dfiuwCXUjq4spKNjZV5eYEpKjhBQUyrq69+o8a3lH/QjWzbiVjmhTaxlYn1gh1OcIXkfRw+HgBHOSloqddPKgC/knaQnrB5fJJwi6x9cX2MUkPHhlpNh69BXnI6TFktEACvXAlAY3x+WFTI4PJTVFPwxaXVwryaxuj7nln33smNwOa0yN5zr859SkPSxJXdxW7tzkWNtrewwJQUN0QjKSXZyVPSy7CRWy/VyJr6sob7kzlyUTaBe3dZOC2vmlX/wRiYXDB1PyzZxHr+kw/88eP7sX27woDOnZbspZ7sy8jg8rbvvbjY7JbrupbjpgLl8MDyr6bF5WDN62nC0wPX8IjSwQKMpU6KrhfIs1htiCndjgFDUjeBr7Wisnav0zPPuTpzt6fHpQBVnLIwcauCj7W3fGZ0r4ZacZuj4ffAAAAUeUlEQVR4nO2bjV8T15rHgRnQmIwTh2TyIpG8MFGSEBITQMBAeDFwgeYFbKW6ZatI271YKlZplbZKbbe9u0u1iuCt9Xb3dne7tnfb3v0L9zln3s68yEvv1b12z+9jIJkMyfOd5+U855yxro6KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiorqWSoJqnOB8JNfiZLJuZnM6ZdfOX7mzJnjr7x8OjMz9yuASyZnZo+/6vV6G1TB81ePzw692GzJubPnCCZFXKyj6+9eq8y9sGjJmVc6
-                        /j5mwXIP5HLtHbEG7xszLyQaYHkbBvss3hrI5QfdHIej8pUXDy3pehlCkBvoMnF15POLMU5PuNddLxZa8nwMpRbXfoIjsbiB7vYYeaTB++r5F4rsdblicO3tBoz27kXDa4x2+peR/V9cD9cZpRJyXSQY+KvHwgVkx39BOCaHLlyYn0u6noH1T//OmZha4Y1gPTb+wmTn9lz5kxfGJEkaa7w49Pw8B1y6j0gwLtJly4XI9lodh8YasaJjCxeeU/lJzhAWG3Kst7v3KWANMffefOZaCDWGFDSp8QJ47ZnHZHKOHJG5dt1J3EDkKVggt3tuL18yL2lgICk6/+xzzXWGtFcfxzgOhaUbK4ZemV12XLfNVZfELnh6OwkOawzpZI3SwtAzjsfkGwaTucE+DkO5OwbbI5F8Pp/LwY9IX/tgD3QfxLlu9+uyaa7k/jfPvvUPWG+dfXO/Hd285AQap8YVlU5J5xPPlOvsb/s6iBGYW4xwMfdiV3d3PnIi0tXRgwWQfZF8NzSM7gZOc1ksk6xLuN68dBCpCQs/vTTjMtmcfDtEgEWlaH+n4GdK5tP+mppxd7R3Rzr0vOrID0S68+2LvYBw4gRyEYccCL/dvYNd+e4+tW2MQYjOnVxK3VSYdB18h106abDZNeZEUDgWJQmoGIYFpU8+M7LkcbDa3d49IJNxscVIPjLQG8O2c4MRY6fPNcR6oNHv6sBuc7vPXWVYMxVSa8XPkGhQOpw4v5xQEVUqrGvPiCyZ8cpuyiEyND3Jt+fcmvvc1nIPxD1dOdQWe2OXGYbJttqRjU77GWZJi7Tk21EMFpX6lwkqEHPl2ZC5XlWs7ejuUKYnDTkiLiPtNuMYhy/A4rt3GEaIZ5s8ZrSDrZ5iJcUyTFr1h8sZArCoNFIwYsE5/ivPgis5q3VS7ZHFfA5PTyKDRMI9ZYTm3GMZsDHlY
-                        /ysL1Mc1eFaPZ7sNM/6xVQQ/Lkikw1JTmd0bIQ3YMHbbKGzf2r+GZR9l5ZCXE8+PyAXx64BgqWvz7718F72M2JcZJD8QDFcbAV5WouZFLzGh3nktCV8/S5IIamfN1KxfGc/NI/R6NjQX8SQUEUcUzIMFYVBSC6lfgyQLL25QTsy71U/E0wxuvwMP50djgsKFBabEmWy5MWxBUNugatmp8akqFL999LCmJhc11aWSqV0aWll5b33NLrkGTVn+ro7BvIK2GKOjLnFnM28xXuVYXCokfJDAJoOpXhGBDLX+7OCQDhL6JwCT+mD9cIv6xsTrisl9C1i8PqN1X1tbW37bnwgo80oc8ueXMQN6aQ6qdtNkrXnLGmG/AU2mxUULYd8QUTmCgoaGMMUIAJ1KtxeXfwFaZY4uQRBwKSD11cRExb8/nAuUZc8Ldf6RTT553q6lYRz540+OmEheyMejwsWCDswxhefnp4/KahgDLu8MGakQhqb37u3EBab9q3vU6AUAVqi7oycU90ojXSwhj5jWsVOEAMA+oPejzx4nNoNmL/o8dycEWUwhoEYdFqwkPbKdQWuEcuUTFht2He3ZuTFm25sth6KXLu5ErZ3k6ixd6Co7x4MhrXPMBjDLENqNUJvFbJwRfcWjOAu1JAVVo1Y+26trwVLpdJDL04hOfC4QaV4oG7RtGQKFaRLa0e4jz/aG1iTZxiDFfpxEIac0VDIgibtpebPpTHXmsFdbau3+VIaxSfziZdYrCH81JvrNYFxvXkt8c59hIbhzF7AMgDGz8oVIxTtX4g2hswBGX17D1ws5rpuxForpZUBJf2plxvs1tKnTxuXuZxlBYeLdSkDGvePTXsCa8Jg4vKUXDJCjZIonpIao2afSbuuH3Np1szVtu92Ka2NJ2kv5JWGENMrBNd1wjp0oXBEEer+CIMN24CV4zYH8VUQRk45VRKpk4G52JQ5GqMLu8wyV0mJQ4LrRlDHAnl7c7qXiNGLWzQnmXxGHkY77uMmezC/8I7HM8zagn22EHU65eALRadQD9IZtVSQXXZWCVw3GB/Jdb1EYqWveiP6/oNh6mUzW0GnuPtyPbEmezB//CD0wa1F3nQcT9c+DzlVsOiI38+yUEaiFpe9vRuXJa7gRCrd0gOx7XbaOGW42p7XWwyuj2x987YNItfQnvtYAcsaAdjKKDERM4O9poOFppb7+/2d0dkRa5btxmUuOcFuG7gMWCxT+C3RYbjJpWzog224sF/VpQ0DmD9Y1KYtnqxIviXqYOoUWjoFg7W/YBmpd9NYJVYEVM/5VSIOTVwskyKXfDsI76EuxG2DBYqp6xtFwnr/NDnVbG3y6e/5BfTWQR0Mppv9MNsURhqjloq/sHMr7GJ8xorYdqNkpEqX1n5HVAiuy7CW7c532MWiMojhQpfyqcVdzHpM6wIZNQ6FlK+IwJxOLRadksAso4oftcTizuUjsQLdJ3RSusNWDbM8Ns1DS/xPxE6z29QOWroq5fiiAlYEq4OYzZ9qsqx6eIoCOE30pWAiw48awaAsTp3q9J9eZq0Vf8dYTCDjfcya7rA1MhCZ0m3UZBFgXEfOUODhtW0scv+sWC7PxcD0YMZjxkIObY0HU0Fc+
-                        /1wQuu/OLVYhCyLjs2iIJ0yOawxOrUT2EnkHjGllURTIPqU3tGre6XLtKsSy9nGotx2kH1H0I4LSR/Riq0HP9eTDNnP+llmxKbij+0wlZbHMCLF2nxEIIo+YV0B0yPRnFPcCdv9I+41NRC16lC0xSJbrmDrQbksKtUiNCV0jvg7T/X3m7Nsp7YqofhHbX/bbqRJLgjFG21GsF5zFYRJtV0scrgojhKLAsaKqNcP8pSMh0wyueLzbMEvSHtMMpdWI+SgayswBJc8DqDjX2hrb4OW7SLOdhEHg3kMDbAwausywzBtTDLQVCeaS0+ZK/5O/eJJjUOeYq4SGeaTiQvIY7/RXNZlWRd9ytbYZ62tZCA+LRaNzT+b8nxOxqJTAm+xwilJMsfi1PYj2TUio9K+G23rWiQyPvXwuqEs5hfR/VLk7VNoM9PK5b0jDI8aV6dsY3HUR54iisMHo4TLYEo2InX6R04X+k3lY/uFuMQHomEoLqREVl7UY3j1HSZIJlnM0fPuw8uXH979lEDrs1nd9l6FcYsxirepi0VDly8KfGqKjMUQVPx+tARiLh/bt4uJLw2jFkQz7wsKCEkMar7ELvtCttZ7954wjmPHf+fhq+oaaodNW4XWE33m6aQ1Fo29PysIPl+nRNbFUCO0VUxn1Dx52b4sJr7cVzIv/bNw1YJBn6BnH3LZ7xGE9907fub+xrhqyycKWcymxfdeBg+ZFhT9GWvnYYhEVhDjPO80uGyKKcxCxW+cMrpMurBd9Uh8ae4MFTq42jpwGpV8ZOsn+Mvvj4+rhl6V4xHKh2W66b0Lp/qMYDZjtDkShbggzkYNFb8R9fidrGhYY4xK57f12Idt1l5eKfa8DoYari+83ofYU+MEGXNV9pS729J9eD+Ft81JZolFSyTycVEIGsoHQPSD54XTZMWX+sWl7XbLEh+0WWdfalXUY5Hfh+riXcUGdvz+xoZqz1XZZSesszLuTprxpXeIRY8BHRzmS4lC6SLpshBURciPMSLJotFObdvpKfquzWa+LIvYG0C9/+Sn+oVl729sqs9xnnHWiu/13n6wtfVgIm1gM8eix5hhKMUEYSkhGXr8kc5GqPhaikGZFBl2B7A53EetC3Zkxro4OUFYwD7a2FTCUZA3OruMkxcvN3lA0RZDoPlbPaRGDZGI1kohEsVraB+abIWl6FShX4nEqLSAu6MdwBKryhKijdOCepLdbpu8tWG4uJubG5s478WH2GU9hkUd7+8PEPpKJ2PjPoPiRofhSBRcda73DcGIcFQs3GIhsO33baF6yF39etCCpg3RLEzXJu9ujJNkzMb45iN0RORllj5igdE7ecCgBxpZnDFK1HMMcYlx+IFcMUQGI5TGEFrHR65TsHYEq3Op05W29YKYNmz8ilqSMb7JyTuPjGDM+Ebh/jgL8fOuyWWczPX1VxP+OxNbT+DpUZXMZ9lR0o+gQEQ1UUS9UvKCIRgb8To+eEs3kLm2PVhCmzu3ta1eXxNKONnhkU6XtCRjUpO3xjfvm5Y4WXYTyFhBHqa5iOoy729w
-                        /E08hp9PtiYmJh5sKWCieVwDpViNS2Tl0oHsQndFEC5DzjLcR8CwO23aXlkn1t327Vtdv357DXT7+o1VbQojpiZv+MeFR2aj2A0gEy7LYJrLvH8AooktLRCfPP7m8Tdpu0AkgpEVRX46mwGHnVRCyal3+VFpbKpTJLGY5R26e7S+fcuyIaZoTeXiMdij8XGzVePj9zfFy0pjpRRG7LAHW8YsOzoB5S9lsxMhB6NfxDdKeIqiqBW7IRkshGqi4Q4dtM7ZP7bj+n1iRTCS6YhrKhcfn7yRZiDwLFaNj98rKGAwluGFVO+
-                        /AsedAyawf8vwgk0g4mAUfcNAhW4ZG00JmmHJIQmgpIWRZRMVI6BFkF0smaZ5ezIFDLgQGEA82rQY5d9cVsGg/Yiokbi1ZQb7Y9VTtG5D4I9ItcpUoNbPTup2Jef7ZzuDvCgabzwSRtBdBLvZSroGk2c7srYC6rV4pJcmV5F7Nm1c1rms9vjQMaKdJi+KxMcWsNam1rLN1hGo6aCmm2+ShiWvoUopCCLhLX5E3hTcaZVKDkZoc1dt0KAqipiLvw7lHoauDavLhHv3PtW6wwG0+I3BvjaDPWkyLtvoDhv26GCXTJZdw2DqgMqwy
-                        /3qfQQ7ritirQhpfr3NjLbKy+7i+eC3k5PQPoxvbphdxhbudeoNRyzf3uB2I7BvTFzIY02mJRD5A1IE11uWa47vjsA+A2fNTmk3fUgXdsNV5wryQsl3w3QbxPc+hYtPfT85uQpxZC0fIu+7qy0RxBo6unvc7j+gwdkCVm0yL1oxeFJb1OPwLZsK7uJlMvkOHX2vc2h3N+gAGc+XUuurGtvk5OS3QRXsJXiFYpHdfGQsAKJQuBdThO907ou43VAVD9x5YuQ6+u94vuLhjVSCqAfizUv2tq0IwWXtbir1htpd76+7sHeCqbXr365OKnpJ5Qquw6sPXahUbG4YuYTNV9ykersH3P8BKI8nTGD/2YpuBW5Vt5Sg2KLCIPpG7esGocSM85S+fRvaxYKH6cIoFL5UKv4SKJ6Ka5EIrN8lEtfQsEUWRjCt8LrbqIFcL4rFA1sTRxWqbx5AV/VfCoAnA0RyrcPSArFp/za2XZRC2tYSdtiObQd5Ya7xRvm0FPvd5LdzCfneHXWywsjduHDZbVYkgl124Os7X0EnBVBb3zw5+mTukgLgSYGfZMGfa4F4dltLk0Pvq2jyPdB7uyHTtWIA0xwW//6DhMIuohkmqyaIID60cLl7cgOxP2FXfb314MHjoygOj/6QSNZduokRpuOEZLCbl/bvaOj8AkILyZOz3d4OoXCZ0FQw33su/D8bXK66xNySeL/wqKDEEn/y/BtWssFcj/dPZHoB15FEoi65/9LBmzd9RByC64aB9uwc+i/ULvQfqeu0H+oh9A87rW7+fQlvJoXQduYuQlH+JOyQxOHDh0+uKLUwJVNdOXzoUHNz8yFFxw6v3Fu+d2+zUFhemjt2DI7Mjxw/ZwA7986l+WPfHdX15L+PqX/+44wSiOqv0vyPh8xqJnXkyJHDRw4jJRJDF9+HjljaZSAeVq0+BkI/Dh2eu7KysnJ+ZWVmrvnYMfPXHmtuHvrpp5mhQ/pbzft/Ko+M/PzzzyMj5Z/2N8tn/fmJjPXHPx8iPuPYoSPo05dK6AbWK3NHLFRPlfx1P/7PhYs/AvrON6q7sKfgumjXSGGUZf8dhw7Zv2E0ZP93P/zw3X7LZygfvM3n20h3IHLdbhymhaPLLPVNdNfz4QSOU0JHVDUrP5p3K/n8ZuXP0ScRH2u6zdpilMGyv1RG7Lo661V4ug12NtkddeHjyuOvZTgVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFdVO2v8rVZ3jV6q6+l+pKNiLpm3BAgHDK+XxYkgBq8GjqhxSf9e3FIvhak07tRaorxar9S+IZLBANhtoKbeEW+pbwo5yfSAcDgTCjmlQNuMIOxz1AYejGnQ4auXaDp
-                        /3NyPFY9VyuFqpZCoOeFQy1UymUssU+aLDkWWLmWCwWgsGa6ka/H6+YAEy9gOm3+qrlgA+MSCfrb6rgIUz9dlstgUeDsdwoFzvyFaK4ZpPGM5mqj5HdjpVc1TFYOB5p1glUAGL5XSolrO1QBVeDQNAFSUM+pfNBIqVYrlSrlWKWfhRqRQDJFggWywXM9lspRYIl+sz4ZbsMDxzBPhKphh31OK+cBjAqs8ZrAXMnM7Ao1YuZ4rDxekiGJ6dHg7UKjVgqWSGs/WV+krWUc5mIWsqVXBM0QhWH5iu1JcD1WqmHr2brc
-                        /ACZlsOVXjq3w2VcnEKzVfjQ8/X7BAbbqaKZZrGQCbDmSn4cqXM7Xpcg2cNFyuVIczlTC8mykie8uQP9ksPDeBZavg5EqgWq6Es45suVqtBoqZ4ZZwsQaA4TCEJBx+3qUDQq9ara+1VJE5tSqq3vCrWgvU6uEIPGr1tWpLPTqrBZ0RhteKjdo4hjhRGrbgJGzBh6BKoqQMo5wMGzP5b0ZPs+n/Z+fxIouCvWj6X6D6S8kTiF8RAAAAAElFTkSuQmCC" alt="esport"></div>
+                    <div class="estilos-jogos"><img src="./img/esport_games.svg" alt="esport"></div>
                     <h1>esportes</h1>
-                </div>
-                <div>
-                    <div class="estilos-jogos"><img src="https://www.milldesk.com.br/wp-content/uploads/2019/05/xadrez.jpeg" alt="estrategia"></div>
-                    <h1>estrategia</h1>
                 </div>
             </div>
         </section>

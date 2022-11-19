@@ -22,7 +22,11 @@ seta_prox.addEventListener('click', function(){
         slide1.style.marginLeft = "0px";
         x = 0
     }
+    slide1.style.delay = "1000"
 });
+seta_ant.addEventListener('dblclick',function(){
+
+})
 
 seta_ant.addEventListener('click', function(){
     // alert('tese');
