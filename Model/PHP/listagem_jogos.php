@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jogos Tabela</title>
         <!-- <link rel="stylesheet" href="../CSS/tabela.css"/> -->
-        <link rel="stylesheet" href="../CSS/menu_style.css">
-        <link rel="stylesheet" href="../CSS/style.css">
-        <script src="./src/components/cardJogo.js" defer></script>
+        <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/menu_style.css">
+        <link rel="stylesheet" href="/TCC_OFNOGAMES//View/CSS/style.css" type="text/css">
+        <script src="/TCC_OFNOGAMES//View/src/components/cardJogo.js" defer></script>
         <style>
             *{
                 padding: 0;
                 margin: 0;
             }
             body{
-                background-color: #000;
+                background-color: #000; 
             }
             .grid{
                 display: grid;
@@ -42,7 +42,7 @@
         
     </div>
     <header class="container bg-purple-black">
-        <img src="img/menu.png" alt="icon-menu" id="icon-menu">
+        <img src="/TCC_OFNOGAMES/View/img/menu.png" alt="icon-menu" id="icon-menu">
         <nav class="container menu">
             <div class="container">
                 <a href="#">
@@ -61,7 +61,7 @@
                 </a>
             </div>          
         </nav>
-        <img src="img/lupa-arredondada.png" alt="lupa-img">
+        <img src="/TCC_OFNOGAMES/View/img/lupa-arredondada.png" alt="lupa-img">
     </header>
     <!-- conteudo principal -->
     <div class="grid">
@@ -94,13 +94,9 @@
                 // echo "</html>";
             ?>
     </div>
-    <!-- <card-jogo class="jogo"
-        photo="https://images.crazygames.com/games/fireboy-and-watergirl-the-forest-temple/cover-1586285142530.jpg?auto=format,compress&q=75&cs=strip"
-        titulo-jogo="$nome"
-        descricao="$descricao"
-        chave="$idJogo"
-    ></card-jogo> -->
-    <script>
+
+    <script src="/TCC_OFNOGAMES/Controller/javascript/jogo_link.js"></script>
+    <!-- <script>
         const card_jogo = document.getElementsByClassName('jogo')
 
         // console.log(card_jogo);
@@ -115,11 +111,11 @@
                 // photo = ele.target.getAttribute('photo')
                 id = ele.currentTarget.getAttribute('chave');
                 // window.location = '../pagina_jogo_teste.html?'+nome+desc+photo
-                window.location = `../PHP/pagina_jogo_teste.php?id=${id}`
+                window.location = `../PHP/pagina_jogo.php?id=${id}`
                 
             })
         }
-    </script>
-    <script src="../javascript/menu.js"></script>
+    </script> -->
+    <script src="/TCC_OFNOGAMES/Controller/javascript/menu.js"></script>
 </body>
 </html>

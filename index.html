@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OFNO Games</title>
-    <link rel="shortcut icon" href="img/controle-de-video-game.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/menu_style.css">
+    <link rel="shortcut icon" href="./View/img/controle-de-video-game.png" type="image/x-icon">
+    <link rel="stylesheet" href="./View/CSS/style.css">
+    <link rel="stylesheet" href="./View/CSS/menu_style.css">
 </head>
 <body>
     <div id="menu_column" class="active">
@@ -15,7 +15,7 @@
         <h1 id="btn_close">X</h1>
         <input type="text" name="serach" id="search">
         <ul>
-            <li><a href="./PHP/listagem_jogos.php">JOGOS</a></li>
+            <li><a href="/Model/PHP/listagem_jogos.php">JOGOS</a></li>
             <li><a href="#loja">LOJA</a></li>
             <li><a href="#sobre">SOBRE</a></li>
             <li><a href="#ajuda">AJUDA</a></li>
@@ -23,10 +23,10 @@
         
     </div>
     <header class="container bg-purple-black">
-        <img src="img/menu.png" alt="icon-menu" id="icon-menu">
+        <img src="./View/img/menu.png" alt="icon-menu" id="icon-menu">
         <nav class="container menu">
             <div class="container">
-                <a href="./PHP/listagem_jogos.php">
+                <a href="./Model/PHP/listagem_jogos.php">
                     <li>Jogos</li>
                 </a>
                 <a href="">
@@ -34,15 +34,15 @@
                 </a>
             </div>
             <div class="container">
-                <a href="ajuda.html">
+                <a href="./View/ajuda.html">
                     <li>Ajuda</li>
                 </a>
-                <a href="sobre.html">
+                <a href="./View/sobre.html">
                     <li>Sobre</li>
                 </a>
             </div>          
         </nav>
-        <img src="img/lupa-arredondada.png" alt="lupa-img">
+        <img src="./View/img/lupa-arredondada.png" alt="lupa-img">
     </header>
     <main>
         <section>
@@ -57,35 +57,35 @@
                 <!-- <img src="" alt="prev-next"> -->
             </div>
             <div id="setas-grupo">
-                <img src="img/seta-esquerda.png" alt="seta-pro" id="seta-before" class="setas">
-                <img src="img/seta-direita.png" alt="seta-next" id="seta-prev" class="setas">
+                <img src="./View/img/seta-esquerda.png" alt="seta-pro" id="seta-before" class="setas">
+                <img src="./View/img/seta-direita.png" alt="seta-next" id="seta-prev" class="setas">
             </div>
         </section>
         <section>
             <h1>Qual seu estilo de jogo?</h1>
             <div class="container alinhar">
                 <div>
-                    <div class="estilos-jogos"><img src="./img/action_game.svg" alt="action"></div>
+                    <div class="estilos-jogos"><img src="./View/img/action_game.svg" alt="action"></div>
                     <h1>Ação</h1>
                 </div>
                 <div>
-                    <div class="estilos-jogos"><img src="./img/Rpg_game.svg" alt="RPG"></div>
+                    <div class="estilos-jogos"><img src="./View/img/Rpg_game.svg" alt="RPG"></div>
                     <h1>rpg</h1>
                 </div>
                 <div>
-                    <div class="estilos-jogos"><img src="./img/adventure_game.svg" alt="adventure"></div>
+                    <div class="estilos-jogos"><img src="./View/img/adventure_game.svg" alt="adventure"></div>
                     <h1>aventura</h1>
                 </div>
                 <div>
-                    <div class="estilos-jogos"><img src="./img/puzzle_game.svg" alt="puzzle" style="margin: 0px 0px 0px 15px"></div>
+                    <div class="estilos-jogos"><img src="./View/img/puzzle_game.svg" alt="puzzle" style="margin: 0px 0px 0px 15px"></div>
                     <h1>puzzle</h1>
                 </div>
                 <div>
-                    <div class="estilos-jogos"><img src="./img/party_games.svg" alt="party game"></div>
+                    <div class="estilos-jogos"><img src="./View/img/party_games.svg" alt="party game"></div>
                     <h1>party games</h1>
                 </div>
                 <div>
-                    <div class="estilos-jogos"><img src="./img/esport_games.svg" alt="esport"></div>
+                    <div class="estilos-jogos"><img src="./View/img/esport_games.svg" alt="esport"></div>
                     <h1>esportes</h1>
                 </div>
             </div>
@@ -137,7 +137,7 @@
             </p>
         </div>
     </footer>
-    <script src="javascript/carrosel.js"></script>
-    <script src="javascript/menu.js"></script>
+    <script src="./Controller/javascript/carrosel.js"></script>
+    <script src="./Controller/javascript/menu.js"></script>
 </body>
 </html>
