@@ -13,7 +13,7 @@ class CardJogo extends HTMLElement
         componentRoot.setAttribute('class','card-jogo');
 
         const newImg = document.createElement('img');
-        newImg.src = this.getAttribute('photo') || "default.png";
+        newImg.src = this.getAttribute('photo') || "https://images.crazygames.com/games/fireboy-and-watergirl-the-forest-temple/cover-1586285142530.jpg?auto=format,compress&q=75&cs=strip";
         newImg.alt = this.getAttribute('alt') || "Imagen not found";
         
         const info = document.createElement('div');
@@ -59,10 +59,11 @@ class CardJogo extends HTMLElement
             background-color: #d0d;;
             border-radius: 20px;
             overflow: hidden;
-            margin: 15px 0px;
+            margin: 15px 20px;
         }
         .card-jogo > img{
             width: 100%;
+            height: 150px;
         }
         .info{
             padding: 10px;

@@ -8,21 +8,15 @@ body{
     color: #fff;
     font-family: sans-serif;
 }
-a{
-    text-decoration: none;
-    color: #fff;
+
+.container{
+    display: flex;
+    /* justify-content: center; */
 }
 .alinhar{
     justify-content: center;
 }
-/* Classes reutilizaveis */
-.container{
-    display: flex;
-}
-    /* .text-white{
-        color: #fff;
-        font-family: sans-serif;
-    } */
+  
 .bg-purple-black{
     background-color: #1a0728;
 }
@@ -42,34 +36,6 @@ header{
     justify-content: space-around;
     align-items: center;
     /* height: fit-content */
-}
-.menu{
-    list-style: none;
-    /* padding: 10px; */
-    justify-content: space-around;
-    width: 100%;
-}
-.menu li{
-    padding: 0px 15px;
-}
-#icon-menu{
-    width: 50px;
-    height: 50px;
-    filter: invert();
-}
-#icon-menu:hover{
-    filter: hue-rotate(170deg);
-}
-header li:hover{
-    color: rgb(195, 0, 195);
-    cursor: pointer;
-}
-header img{
-    width: 40px;
-    height: 40px;
-    filter: invert();
-    /* filter: brightness(20%); */
-    transform: rotateY(180deg);
 }
 /* main section div */
 section h1{

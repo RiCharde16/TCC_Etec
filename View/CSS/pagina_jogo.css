@@ -16,7 +16,7 @@ body{
 }
 .scroll-escondido{
     width: 880px;
-    height: 610px;
+    height: 660px;
     overflow: hidden;
 }
 .block{
@@ -30,8 +30,26 @@ body{
     text-transform: uppercase;
 }
 .block-2{
+    display: flex;
     width: 859px;
     padding: 15px 25px;
+    margin: 0px 0px 100px 0px;
+}
+.block-2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 110px;
+    background-color: #fff;
+    border-radius: 10%;
+    /* padding: 0px 0px 0px 0px; */
+    margin: 0px 20px 0px 0px;
+}
+#img-jogo{
+    width: 120px;
+    height: 100px;
+    /* padding: 0px 20px 0px 0px; */
 }
 .container{
     display: flex;

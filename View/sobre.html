@@ -9,42 +9,13 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/sobre_style.css">
     <link rel="stylesheet" href="CSS/menu_style.css">
+    <script src="./src/components/Menu.js"></script>
+    <script src="./src/components/Header.js"></script>
+    <script src="./src/components/footer.js"></script>
 </head>
 <body>
-    <div id="menu_column" class="active">
-        <!-- <img src="img/lupa-arredondada.png"> -->
-        <h1 id="btn_close">X</h1>
-        <input type="text" name="serach" id="search">
-        <ul>
-            <li><a href="./PHP/listagem_jogos.php">JOGOS</a></li>
-            <li><a href="#loja">LOJA</a></li>
-            <li><a href="#sobre">SOBRE</a></li>
-            <li><a href="#ajuda">AJUDA</a></li>
-        </ul>
-        
-    </div>
-    <header class="container bg-purple-black text-white">
-        <img src="img/menu.png" alt="icon-menu" id="icon-menu">
-        <nav class="container menu">
-            <div class="container">
-                <a href="./PHP/listagem_jogos.php">
-                    <li>Jogos</li>
-                </a>
-                <a href="">
-                    <li>Loja</li>
-                </a>
-            </div>
-            <div class="container">
-                <a href="ajuda.html">
-                    <li>Ajuda</li>
-                </a>
-                <a href="">
-                    <li>Sobre</li>
-                </a>
-            </div>          
-        </nav>
-        <img src="img/lupa-arredondada.png" alt="lupa-img">
-    </header>
+   <menu-site></menu-site>
+   <header-jogo></header-jogo>
     <main>
         <div>
             <h1>Sobre</h1>
@@ -84,29 +55,6 @@
             <div class="circle" id="c4"><img src="https://cdn-icons-png.flaticon.com/512/33/33879.png" alt="quadrado-icon"></div>
         </div>
     </section>
-    <footer class="bg-purple-black">
-        <div class="container">
-            <a href="sobre.html">
-                <h3>sobre</h3>
-            </a>
-            <div class="container">
-                <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png" alt="icon-facebook" class="icon-social"></a>
-                <a href="https://twitter.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3669/3669691.png" alt="icon-twitter" class="icon-social"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938052.png" alt="icon-instagram" class="icon-social"></a>
-            </div>
-            <a href="ajuda.html">
-                <h3>ajuda</h3>
-            </a>
-        </div>
-        <div>
-            <p>&copy; 2022, R.P.D gaMes. Todos os direito reservados. R.P.D gaMEs como logo e site inc.no Brasil da America do sul.Outras marcas e nomes de produtos são marcas registradas de 
-                seus respectivos donos. Transações para alem do Brasil são feitas através da R.P.D gaMes internacioanl
-            </p>
-        </div>
-    </footer>
-    <script src="javascript/sobre.js"></script>
-    <script src="javascript/menu.js"></script>
-    <script src="Jquery/jquery-3.6.0.js"></script>
-    <script src="Jquery/"></script>
+    <footer-site></footer-site>
 </body>
 </html>

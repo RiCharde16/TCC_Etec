@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <script src="./src/components/Header.js" defer></script>
+    <Script src="./src/components/Menu.js" defer></Script>
+    <script src="./src/components/footer.js" defer></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        #buscar{ 
+            display: flex;
+            width: 200px;
+            align-items: center;
+            padding: 2px;
+            height: 40px;
+            margin: 20px auto;
+            border: 1px solid #000;
+            border-radius: 50px;
+            /* z-index: 0; */
+        }
+        #buscar > input{
+            padding: 2px 4px;
+            
+            text-align: right;
+            border: none;
+        }
+        #buscar input:focus{
+            box-shadow: 0 0 0 0;
+            outline: 0;
+            padding: 2px 2px;
+        }
+        #buscar > img{
+            width: 25px;
+            /* border: #000; */
+            rotate: 450deg;
+        }
+        input[type="search"]::-webkit-search-cancel-button{
+            display: none;
+        }
+        /* #menu{
+            z-index: 2;
+        } */
+        main{
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <header-jogo 
+        dir="../Controller/Javascript/Controle_menu.js"
+        dir-lupa="./img/lupa-arredondada.png"
+        dir-menu="./img/menu.png"
+    ></header-jogo>
+    <menu-site dir-lupa="./img/lupa-arredondada.png"></menu-site>
+    <main></main>
+    <footer-site></footer-site>
+</body>
+</html>

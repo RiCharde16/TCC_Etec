@@ -7,13 +7,14 @@
 }
 table{
     margin: 5rem auto;
+    background-color: #eee;
 }
 tr, td, th{
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
-tr:nth-child(2n){
-    background-color: #999;
+tbody tr:nth-child(2n){
+    background-color: rgb(0, 0, 0);
 }
 th{
     background-color: #f0f;

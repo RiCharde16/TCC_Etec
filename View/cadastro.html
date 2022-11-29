@@ -8,46 +8,17 @@
     <link rel="stylesheet" href="CSS/login.css">
     <link rel="stylesheet" href="CSS/menu_style.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="./src/components/Menu.js" defer></script>
+    <script src="./src/components/Header.js" defer></script>
+    <script src="./src/components/footer.js" defer></script>
 </head>
 <body class="p-5 text-light">
-<script src="https://accounts.google.com/gsi/client" async defer></script>
-<div id="menu_column" class="active">
-   <!-- <img src="img/lupa-arredondada.png"> -->
-   <h1 id="btn_close">X</h1>
-   <input type="text" name="serach" id="search">
-   <ul>
-       <li><a href="#jogos">JOGOS</a></li>
-       <li><a href="#loja">LOJA</a></li>
-       <li><a href="#sobre">SOBRE</a></li>
-       <li><a href="#ajuda">AJUDA</a></li>
-   </ul>
-   
-</div>
-<header class="container bg-purple-black">
-   <img src="img/menu.png" alt="icon-menu" id="icon-menu">
-   <nav class="container menu">
-       <div class="container">
-           <a href="">
-               <li>Jogos</li>
-           </a>
-           <a href="">
-               <li>Loja</li>
-           </a>
-       </div>
-       <div class="container">
-           <a href="ajuda.html">
-               <li>Ajuda</li>
-           </a>
-           <a href="sobre.html">
-               <li>Sobre</li>
-           </a>
-       </div>          
-   </nav>
-   <img src="img/lupa-arredondada.png" alt="lupa-img">
-</header>   
+<!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
+   <menu-site></menu-site>
+   <header-jogo></header-jogo>
    <main class="border border-white text-center p-5">
-      <form method="POST" action="dados.php">
-         <h1>cadastro</h1> 
+      <form method="POST" action="/TCC_OFNOGAMES/Model/PHP/cadastrar_usuario.php">
+         <h3>cadastro</h3> 
          <div>
             <label for="nome">Nome:</label>
             <input type="text" name="nome">
@@ -62,46 +33,32 @@
             <label for="senha">Senha:</label>
             <input type="password" name="senha">
          </div>
+         <div>
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel">
+         </div>
          <br>
          <input type="submit" value="Login">
          <br>
-         <h3>Ou</h3>
-         <br>
-         <div id="g_id_onload"
-            data-client_id="132012896010-keem8l8iip3loramee31ar2kle4dv3vb.apps.googleusercontent.com"
-            data-login_uri="http://localhost/TCC_TESTE/dados.php"
-            data-auto_prompt="false">
-         </div>
-            <div class="g_id_signin"
-            data-type="standard"
-            data-size="large"
-            data-theme="outline"
-            data-text="sign_in_with"
-            data-shape="rectangular"
-            data-logo_alignment="left">
+         <div id="not" style="display: none;">
+            <h3>usuario Não Cadastrado!</h3>
          </div>
       </form>
    <main>
-   <footer class="bg-purple-black">
-      <div class="container">
-            <a href="sobre.html">
-               <h3>sobre</h3>
-            </a>
-            <div class="container">
-               <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png" alt="icon-facebook" class="icon-social"></a>
-               <a href="https://twitter.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3669/3669691.png" alt="icon-twitter" class="icon-social"></a>
-               <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938052.png" alt="icon-instagram" class="icon-social"></a>
-            </div>
-            <a href="ajuda.html">
-               <h3>ajuda</h3>
-            </a>
-      </div>
-      <div>
-            <p>&copy; 2022, R.P.D gaMes. Todos os direito reservados. R.P.D gaMEs como logo e site inc.no Brasil da America do sul.Outras marcas e nomes de produtos são marcas registradas de 
-               seus respectivos donos. Transações para alem do Brasil são feitas através da R.P.D gaMes internacioanl
-            </p>
-      </div>
-   </footer>
+   <footer-site></footer-site>
+   <script>
+      const not_sub = document.getElementById('not');
+
+      // console.log(not_sub);
+      // not_sub.removeAttribute('style')
+      console.log(window.location);
+      // if(window.location.search(form="1") != -1){
+      //    // console.log('Funcionou');
+      // }
+      // //    // not_sub.removeAttribute('style');
+      //    console.log('Teste');
+      // }
+   </script>
    <script src="javascript/menu.js"></script>
 </body>
 </html>
