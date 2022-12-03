@@ -45,15 +45,29 @@ input{
     position: relative;
     text-align: center;
 }
+#outros div img{
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+#outros div img:hover{
+    transform: scale(1.1);
+}
 #outros hr{
     position: absolute;
-    right: -130px;
+    right: -60px;
 }
 #outros span{
     position: relative;
     top: -5px;
     background-color: #000;
     border: 10px solid #000;
+}
+#outros div{
+    width: 200px;
+    margin: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 hr{
     background-color: #fff;
@@ -75,7 +89,9 @@ input[type=submit]:hover{
     background-color: rgb(255, 255, 255);
     border: 1px solid #fff;
 }
-/* form h1{
-    line-height: 100px;
-    text-transform: uppercase;
-} */
+input:-webkit-autofill{
+    border: 1px solid white;
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+    /* -webkit-box-shadow: 0 0 0px 1000px #000 inset; */
+    transition: background-color 5000s ease-in-out 0s;
+}

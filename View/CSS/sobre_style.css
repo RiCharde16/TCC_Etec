@@ -48,10 +48,9 @@ section div{
 } */
 .circle{
     display: flex;
-    width: 150px;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    padding: 5px;
     background-color: #fff;
     border-radius: 50%;
     text-align: center;
@@ -60,8 +59,8 @@ section div{
 }
 .circle img{
     /* width: 100%; */
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     /* padding: 25px; */
 }

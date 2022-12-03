@@ -24,9 +24,6 @@ seta_prox.addEventListener('click', function(){
     }
     slide1.style.delay = "1000"
 });
-seta_ant.addEventListener('dblclick',function(){
-
-})
 
 seta_ant.addEventListener('click', function(){
     // alert('tese');
@@ -39,3 +36,21 @@ seta_ant.addEventListener('click', function(){
         slide1.style.marginLeft = "-"+x+"px"
     }
 });     
+
+let temp = setInterval(()=>{
+    if(x == 0){                 
+        x += 805;
+        slide1.style.marginLeft = "-"+x+"px";
+    }
+    
+    else if(slide1.style.marginLeft == "-"+x+"px" && slide1.style.marginLeft != "-2405px"){
+        x += 800;
+        slide1.style.marginLeft = "-"+x+"px"
+        console.log(slide1.style.marginLeft)
+    }
+    else{
+        slide1.style.transition = "2s";
+        slide1.style.marginLeft = "0px";
+        x = 0
+    }
+},8000)

@@ -67,7 +67,7 @@
             <div class="grid-2">
                 <?php
                     include('./Model/PHP/conection.php');
-                    $sql = $con->prepare('SELECT * FROM jogos LIMIT 3');
+                    $sql = $con->prepare('SELECT * FROM jogos LIMIT 4');
 
                     $sql->execute();
 
