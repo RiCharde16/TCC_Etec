@@ -115,7 +115,7 @@ class Header extends HTMLElement
             /* overflow: visible; */
             top: 0; 
             height: 80px;
-            margin: 0px 0px 100px 0px;
+            margin: 0px 0px 20px 0px;
             align-items: center;
             padding: 0px 15px;
         }
@@ -167,6 +167,9 @@ class Header extends HTMLElement
             /*text-align: right;*/
             text-align: left;
             border: none;
+        }
+        div{
+            width: 200px;
         }
         #buscar input:focus{
             box-shadow: 0 0 0 0;

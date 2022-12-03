@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jogos Tabela</title>
+        <title>OFNO Games</title>
+        <link rel="shortcut icon" href="/TCC_OFNOGAMES/View/img/Logo_OFNOGAMES.png" type="image/x-icon">
         <!-- <link rel="stylesheet" href="../CSS/tabela.css"/> -->
         <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/menu_style.css">
         <link rel="stylesheet" href="/TCC_OFNOGAMES//View/CSS/style.css" type="text/css">
@@ -23,19 +24,11 @@
             .grid{
                 margin: 50px auto 0px auto;
                 display: grid;
-                /* background-color: #0f0; */
-                padding: 0px 80px;
-                grid-template-columns: auto auto auto;
+                padding: 0px 106px;
+                grid-template-columns: auto auto auto auto;
             }
             .jogo{
                 cursor: pointer;
-                /* width: 100px; */
-                /* margin: 100px 0px; */
-                /* transition: 0.5s ease-in-out; */
-            }
-            #footer{
-                /* position: absolute;
-                bottom: 0; */
             }
         </style>
 </head>

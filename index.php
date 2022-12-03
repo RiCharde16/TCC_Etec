@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OFNO Games</title>
-    <link rel="shortcut icon" href="./View/img/controle-de-video-game.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/TCC_OFNOGAMES/View/img/Logo_OFNOGAMES.png" type="image/x-icon">
     <link rel="stylesheet" href="./View/CSS/style.css">
     <link rel="stylesheet" href="./View/CSS/menu_style.css">
     <script src="./View/src/components/Header.js" defer></script>
