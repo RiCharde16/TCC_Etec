@@ -42,6 +42,8 @@
 <body>
     <menu-site></menu-site>
     <header-jogo></header-jogo>
+    <br>
+    <br>
     <!-- conteudo principal -->
     <div class="grid">
             <?php

@@ -133,6 +133,10 @@
         </table>
     </main>
     <!-- Footer -->
+    <br>
+    <br>
+    <br>
+    <br>
     <footer-site></footer-site>
     <script src="/TCC_OFNOGAMES/Controller/javascript/adminstrador.js"></script>
     <script src="/TCC_OFNOGAMES/Controller/javascript/filter.js"></script>

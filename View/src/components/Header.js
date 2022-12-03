@@ -32,7 +32,7 @@ class Header extends HTMLElement
         const link_logo = document.createElement('a');
         link_logo.appendChild(img_logo);
         link_logo.href = "/TCC_OFNOGAMES/index.php"
-        img_logo.src = this.getAttribute('dir-log') || "/TCC_OFNOGAMES/View/img/Logo.svg";
+        img_logo.src = this.getAttribute('dir-log') || "/TCC_OFNOGAMES/View/img/Logo_OFNOGAMES.png";
         img_logo.setAttribute('id','logo')
         // navegation.appendChild(img_logo);
         navegation.appendChild(link_logo);
@@ -105,8 +105,8 @@ class Header extends HTMLElement
             position: absolute;
             top: 10px;
             margin: 0px 10px 50px 0px;
-            width: 100px;
-            heigth: 100px;
+            width: 150px;
+            heigth: 150px;
         }
         /* Header > nav */
         header{
@@ -115,6 +115,7 @@ class Header extends HTMLElement
             /* overflow: visible; */
             top: 0; 
             height: 80px;
+            margin: 0px 0px 100px 0px;
             align-items: center;
             padding: 0px 15px;
         }

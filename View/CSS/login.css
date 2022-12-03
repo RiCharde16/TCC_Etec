@@ -5,7 +5,7 @@
 label{
     padding: 20px 0px;
 }
-form h3{
+form h1{
     text-transform: uppercase;
     margin: 25px 0px;
 }
@@ -37,20 +37,45 @@ input{
     height: 30px;
     border-radius: 10px;
     padding: 10px;
+    background-color: #000;
+    border: 2px solid  #999;
+    color: #fff;
+}
+#outros{
+    position: relative;
+    text-align: center;
+}
+#outros hr{
+    position: absolute;
+    right: -130px;
+}
+#outros span{
+    position: relative;
+    top: -5px;
+    background-color: #000;
+    border: 10px solid #000;
+}
+hr{
+    background-color: #fff;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    width: 300px;
 }
 input[type=submit]{
-    background-color: #000;
+    background-color:#6110A1;
+    height: 35px;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid rgb(0, 0, 0);
     cursor: pointer;
     transition: 1s ease-in-out;
     padding: 0;
 }
 input[type=submit]:hover{
-    color: #000;
-    background-color: #fff;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #fff;
 }
-form h1{
+/* form h1{
     line-height: 100px;
     text-transform: uppercase;
-}
+} */

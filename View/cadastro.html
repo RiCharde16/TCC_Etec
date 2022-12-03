@@ -18,32 +18,33 @@
    <header-jogo></header-jogo>
    <main class="border border-white text-center p-5">
       <form method="POST" action="/TCC_OFNOGAMES/Model/PHP/cadastrar_usuario.php">
-         <h3>cadastro</h3> 
+         <h1>Vamos começar?</h1> 
          <div>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" required>
+            <label for="nome">Usuario:</label>
+            <input type="text" name="nome" required placeholder="Usuario">
          </div>
          <br>
          <div>
             <label for="email">E-mail:</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" required placeholder="E-mail">
          </div>
          <br>
          <div>
             <label for="senha">Senha:</label>
-            <input type="password" name="senha" required>
+            <input type="password" name="senha" required placeholder="Senha">
          </div>
          <br>
          <div>
             <label for="tel">Telefone:</label>
-            <input type="tel" name="tel">
+            <input type="tel" name="tel" placeholder="telefone">
          </div>
          <br>
-         <input type="submit" value="Cadastrar">
          <br>
-         <!-- <div id="not" style="display: none;">
-            <h3>usuario Não Cadastrado!</h3>
-         </div> -->
+         <input type="submit" value="Cadastrar" style="width: 250px;">
+         <br>
+         <div id="outros">
+            <hr><span>Ou</span></hr>
+         </div>
       </form>
    <main>
    <footer-site></footer-site>
