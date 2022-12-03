@@ -65,6 +65,9 @@
     <!-- Header -->
     <header-jogo></header-jogo>
     <!-- Main -->
+    <br>
+    <br>
+    <br>
     <main>
         <div class="container">
             <div class="buscar">
