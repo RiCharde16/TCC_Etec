@@ -52,7 +52,7 @@ if($number_of_rows > 0){
         }
         else if($linha['id_tipo'] == 2){
             $tipo_user = "Usuario";
-            header('location: /TCC_OFNOGAMES/index.html');
+            header('location: /TCC_OFNOGAMES/index.php');
         }
 
         // echo <<<HTML
@@ -73,7 +73,7 @@ if($number_of_rows > 0){
     HTML;
 
     // echo $number_of_rows;
-    // header('refresh:4; url= /TCC_OFNOGAMES/View/login.html');
+    header('refresh:4; url= /TCC_OFNOGAMES/View/login.html');
 }
 
 

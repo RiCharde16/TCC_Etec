@@ -53,7 +53,7 @@ class CardJogo extends HTMLElement
             font-family: 'Robot',sans-serif;
         }
         .card-jogo{
-            border: 1px solid #ddd;
+            border: 2px solid #d0d;
             width: 250px;
             height: 300px;
             background-color: #d0d;;
@@ -63,10 +63,16 @@ class CardJogo extends HTMLElement
         }
         .card-jogo > img{
             width: 100%;
-            height: 150px;
+            height: 210px;
         }
         .info{
+            width: 250px;
+            height: 80px;
+            text-align: center;
             padding: 10px;
+            border-radius: 50px;
+            background-color: #d0d;
+            overflow: hidden;
         }
         .info > h1{
             color: #fff;
@@ -77,6 +83,13 @@ class CardJogo extends HTMLElement
             font-size: 15px;
             color: #eeee;
             margin: 10px 0px;
+        }
+        .card-jogo{
+            cursor:pointer;
+            transition: 0.5s ease-in-out;
+        }
+        .card-jogo:hover{
+            transform: scale(1.1);
         }
         `
 

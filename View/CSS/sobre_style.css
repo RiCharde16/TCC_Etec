@@ -10,64 +10,11 @@ footer{
     bottom: 0;
     margin-bottom: 0;
 }
+.block{
+    margin: 100px 0px;
+}
 main div{
     margin: 20px;
-}
-.seta_controle{
-    position: relative;
-    width: 100px;
-    filter: invert();
-}
-#controle_setas{
-    /* position: relative; */
-    margin-top: -20px;
-    background-image: url("../img/setas_cont.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 550px;
-    /* left: 50px; */
-    height: 500px;
-}
-#controle_setas div{
-    /* font-size: 50px; */
-    position: relative;
-    color: black;
-}
-#seta1{
-    width: 140px;
-    height: 150px;
-    left: 180px;
-    top: 50px;
-    padding: 35px;
-    border-radius: 0px 0px 500px 500px;
-    /* background-color: aqua; */
-}
-#seta2{
-    width: 140px;
-    height: 150px;
-    left: 55px;
-    top: 25px;
-    padding: 50px 0px;
-    border-radius: 0px 500px 500px 0px;
-    /* background-color: aqua; */
-}
-#seta3{
-    width: 140px;
-    height: 150px;
-    left: 310px;
-    top: -125px;
-    padding: 50px 0px;
-    border-radius: 500px 0px 0px 500px;
-    /* background-color: aqua; */
-}
-#seta4{
-    width: 140px;
-    height: 150px;
-    left: 180px;
-    top: -150px;
-    padding: 55px 0px;
-    border-radius: 500px 500px 0px 0px;
-    /* background-color: aqua; */
 }
 .bloco{
     /* position: relative; */
@@ -82,6 +29,16 @@ section div{
     /* width: auto; */
     padding: 0;
 }
+.dev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    
+}
+.dev div:hover{
+    transform: scale(1.1);
+}
 /* #controle_btn{
     position: absolute;
     width: 1200px;
@@ -90,39 +47,21 @@ section div{
     right: 0;
 } */
 .circle{
-    position: absolute;
+    display: flex;
     width: 150px;
+    justify-content: center;
+    align-items: center;
     height: 150px;
     background-color: #fff;
     border-radius: 50%;
-    right: 20%;
-    color: black;
-    padding: 25px;
     text-align: center;
-}
-.circle div p{
-    color:#fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 .circle img{
-    width: 100%;
-    width: 150px;
-    transform: translate(-25px,-25px);
-    padding: 25px;
-    /* border-radius: 40%; */
-    /* border: 1px solid #000; */
-    transition: 1s;
-}
-#c1{
-    top: 45%;
-}
-#c2{
-    top: 85%;
-}
-#c3{
-    right: 10%;
-    top: 65%;
-}
-#c4{
-    right: 30%;
-    top: 65%;
+    /* width: 100%; */
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    /* padding: 25px; */
 }

@@ -28,6 +28,15 @@ class Header extends HTMLElement
         link_login.textContent = "Login";
         link_login.href = this.getAttribute('dir-login') || "/TCC_OfNoGames/View/login.html";
 
+        const img_logo = document.createElement('img');
+        const link_logo = document.createElement('a');
+        link_logo.appendChild(img_logo);
+        link_logo.href = "/TCC_OFNOGAMES/index.php"
+        img_logo.src = this.getAttribute('dir-log') || "/TCC_OFNOGAMES/View/img/Logo.svg";
+        img_logo.setAttribute('id','logo')
+        // navegation.appendChild(img_logo);
+        navegation.appendChild(link_logo);
+
         div_1.appendChild(link_jogos);
         div_1.appendChild(link_login);
 
@@ -92,6 +101,13 @@ class Header extends HTMLElement
         .bg-purple-black{
             background-color: #1a0728;
         }
+        #logo{
+            position: absolute;
+            top: 10px;
+            margin: 0px 10px 50px 0px;
+            width: 100px;
+            heigth: 100px;
+        }
         /* Header > nav */
         header{
             position: sticky;
@@ -137,7 +153,7 @@ class Header extends HTMLElement
             display: flex;
             width: 210px;
             align-items: center;
-            padding: 2px;
+            padding: 0px 5px;
             height: 40px;
             margin: 20px auto;
             border: 1px solid #000;
@@ -145,9 +161,10 @@ class Header extends HTMLElement
             background-color: #fff;
         }
         #buscar > input{
-            padding: 2px 4px;
+            padding: 2px 10px;
             width: 200px;
-            text-align: right;
+            /*text-align: right;*/
+            text-align: left;
             border: none;
         }
         #buscar input:focus{

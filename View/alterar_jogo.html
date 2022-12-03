@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/style.css">
+    <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/login.css">
+</head>
+<style>
+    form div{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    label{
+        margin: 0;
+        padding: 10px;
+    }
+    textarea{
+        resize: none;
+    }
+    label[for='desc']{
+        display: flex;
+    }
+</style>
+<body>  
+    <form action="/TCC_OFNOGAMES/Model/PHP/alterar.php" method="POST" enctype="multipart/form-data">
+        <h1>Alterar Dados</h1>
+        <div>
+            <label for="nome">Nome:
+                <input type="text" name="nome">
+            </label>
+
+            <label for="categoria">Categoria:
+
+                <select name="categoria">
+                    <option value="Ação">Ação</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="RPG">RPG</option>
+                    <option value="Puzzle">Puzzle</option>
+                    <option value="Party Game">Party Games</option>
+                    <option value="Esporte">Esporte</option>
+                </select>
+            </label>
+            <label for="desc">
+                Descrição:
+                <textarea name="desc"></textarea>
+            </label>
+            <label for="url">Url:
+                <input type="text" name="url">
+            </label>
+            <label for="img">Imagem:
+                <input type="file" name="img">
+            </label>
+        </div>
+        <input type="submit" value="Alterar">
+    </form>

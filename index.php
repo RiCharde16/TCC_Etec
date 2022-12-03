@@ -11,6 +11,7 @@
     <script src="./View/src/components/Header.js" defer></script>
     <script src="./View/src/components/Menu.js" defer></script>
     <script src="./View/src/components/footer.js" defer></script>
+    <script src="./View/src/components/cardJogo.js" defer></script>
 </head>
 <body>
    <header-jogo></header-jogo>
@@ -21,7 +22,7 @@
                 <div class="container">
                     <img src="https://adrenaline.com.br/uploads/chamadas/super-smash-bros-ultimate-1200.jpg" class="slide" >
                     <img src="https://i.ytimg.com/vi/A5TMXbk04ec/maxresdefault.jpg" class="slide">
-                    <img src="https://www.gamegratistm.com/wp-content/uploads/2022/03/STALKER-2-lancamentos-jogos-pc.jpg" class="slide">
+                    <img src="https://static.heroesofthestorm.com/images/global/fb-share-1fcc54becc.jpg" class="slide">
                     <img src="https://revolutionarena.com.br/wp-content/uploads/2022/07/MultiVersus.jpg" class="slide">
                     <!-- Setas -->
                 </div>
@@ -63,27 +64,32 @@
         </section>
         <section>
             <h1 class="text-white">Jogos em alta</h1>
-            <div class="container alinhar">
-                <div>
-                    <div class="img-jogos"><img src="https://upload.wikimedia.org/wikipedia/pt/5/53/God_of_War_2005_capa.png" alt="jogo-1"></div>
-                    <h2>Good of Wars 1</h2>
-                    <h2>R$ 14,89</h2>
-                </div>
-                <div>
-                    <div class="img-jogos"><img src="https://files.tecnoblog.net/wp-content/uploads/2019/05/league-of-legends-768x432.jpg" alt="jogo-2"></div>
-                    <h2>League of Legends</h2>
-                    <h2>Gratis</h2>
-                </div>
-                <div>
-                    <div class="img-jogos"><img src="https://assets.turbologo.com/blog/en/2021/11/18062115/roblox-logo-2018-1.png" alt="jogo-3"></div>
-                    <h2>Roblox</h2>
-                    <h2>Gratis</h2>
-                </div>
-                <div>
-                    <div class="img-jogos"><img src="https://pics.filmaffinity.com/the_making_of_shadow_of_the_colossus-391794377-large.jpg" alt="jogo-4"></div>
-                    <h2>Shadow Of The Colossus</h2>
-                    <h2>R$ 49,75</h2>
-                </div>
+            <div class="grid-2">
+                <?php
+                    include('./Model/PHP/conection.php');
+                    $sql = $con->prepare('SELECT * FROM jogos LIMIT 3');
+
+                    $sql->execute();
+
+                    while($row = $sql->fetch(PDO::FETCH_ASSOC)){
+                        $idJogo = $row['id_jogo'];
+                        $nome = $row['nome'];
+                        $categoria = $row['categoria'];
+                        $descricao = $row['descricao'];
+                        $img = $row['imagem'];
+                        
+                        $card = <<<card
+                                <card-jogo class="jogo"
+                                    photo="$img"
+                                    titulo-jogo="$nome"
+                                    descricao="$descricao"
+                                    chave="$idJogo"
+                                ></card-jogo>
+                        card;
+
+                        echo $card;
+                    }
+                ?>
             </div>
             <div class="container btn"><button id="btn_Mjogos">Mais Jogos</button></div>
         </section>
@@ -91,6 +97,7 @@
     <footer-site></footer-site>
     <script src="./Controller/javascript/carrosel.js"></script>
     <script src="./Controller/javascript/categoria.js"></script>
+    <script src="./Controller/javascript/jogo_link.js"></script>
     <!-- <script src="./Controller/javascript/menu.js"></script> -->
 </body>
 </html>

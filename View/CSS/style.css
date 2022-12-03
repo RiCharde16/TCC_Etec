@@ -46,11 +46,29 @@ section h1{
 }
 section h2{
     width: 200px;
+    
+}
+h1{
+    line-height: 50px;
 }
 .slide{
     transition: 1s;
     width: 800px;
     height: 450px;
+}
+p{
+    font-weight: lighter;
+    line-height: 20px;
+    /* width: 500px; */
+}
+main div p{
+    width: 800px;
+    margin: auto;
+    /* text-align: center; */
+}
+p span{
+    font-weight: bold;
+    color: #999;
 }
 /* Slider desginer */
 .carrosel{
@@ -134,6 +152,7 @@ button{
     font-weight: 700;
     text-transform: uppercase;
     transition: 1s;
+    margin: 50px 0px 0px 0px;
 }
 #btn_Mjogos:hover{
     background-color: #fff;
@@ -173,4 +192,8 @@ footer{
     margin-top: 20px;
     text-align: center;
     padding: 10px;
+}
+.grid-2{
+    display: flex;
+    justify-content: center;
 }

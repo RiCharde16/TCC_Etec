@@ -1,64 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/style.css">
-    <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/login.css">
-</head>
-<body>  
-    <form action="" method="POST">
-        <h1>Alterar Dados</h1>
-        <div>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome">
-            <label for="categoria">Categoria:</label>
-            <select name="categoria">
-                <option value="Ação">Ação</option>
-                <option value="Aventura">Aventura</option>
-                <option value="RPG">RPG</option>
-                <option value="Puzzle">Puzzle</option>
-                <option value="Party Game">Party Games</option>
-                <option value="Esporte">Esporte</option>
-            </select>
-            <label for="desc">Descrição:</label>
-            <textarea name="desc"></textarea>
-            <label for="url">Url:</label>
-            <input type="text" name="url">
-            <label for="img">Imagem:</label>
-            <input type="file" name="img">
-        </div>
-        <input type="submit" value="Alterar">
-    </form>
-    <?php
-    include('conection.php');
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    body{
+        background-color: #000;
+    }
+    .main{
+        color: #fff;
+    }
+    .container{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<?php
+include('conection.php');
+session_start();
 
-    $dados = $_GET['numero'];
+// echo $_SESSION['id'];
+// echo $_SESSION['tabela'];
 
-    // Dados do Formulario Alterar
+if($_SESSION['tabela'] == 'jogos'){
+    // echo $_SESSION['tabela'];
+
+    $id_jogo = $_SESSION['id'];
     $nome = $_POST['nome'];
     $categoria = $_POST['categoria'];
     $desc = $_POST['desc'];
     $url = $_POST['url'];
-    $img = $_POST['img'];
 
-    // $html = <<<HTML
-    // <pre>
-    // Nome: $nome
-    // Categoria: $categoria
-    // Descrição: $desc
-    // Url: $url
-    // Imagem: <img src="$img">
-    // </pre>
-    // HTML;
+    // $img = $_POST['img'];
+    $upload_dir = '/TCC_OFNOGAMES/View/img/img_jogos/';
+    $arquivo = $_FILES['img']['name'];
 
-    // echo $html;
+    // Separa o arquivo e cria um novo nome para a imagem
+    // $separa = explode('.',$arquivo);
+    // $separa = array_reverse($separa);
+    // $tipo = $separa[0];
+    // $imagem_jogo  = $ar . "." . $tipo;
+    if(copy($_FILES['img']['tmp_name'], $upload_dir . $arquivo)){
 
-    $sql = $con->prepare("UPDATE jogos SET nome='$nome', categoria='$categoria', descricao='$desc', url='$url', imagem='$img' WHERE id='$dados' ");
+        $arquivo_dir = $upload_dir . $arquivo;
+
+        $sql = $con->prepare("UPDATE jogos SET nome='$nome', categoria='$categoria', descricao='$desc', url='$url', imagem='$arquivo_dir' WHERE id_jogo=$id_jogo ");
+    
+        $sql->execute();
+    
+        echo <<<HTML
+            <main class="container">
+                    <h1>! Jogo Alterado !</h1>
+            </main> 
+        HTML;
+
+        header('refresh: 4; url= /TCC_OFNOGAMES/Model/PHP/Pagina_administrador.php');
+    }
+}
+else if($_SESSION['tabela'] == 'usuario'){
+    // echo $_SESSION['tabela'];
+    // echo "<br>";
+    // echo $_SESSION['id'];
+
+    $id_user = $_SESSION['id'];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $tel = $_POST['tel'];
+
+    $sql = $con->prepare("UPDATE usuario SET nome='$nome', email='$email', senha='$senha', telefone='$tel' WHERE id_user=$id_user ");
 
     $sql->execute();
-    ?>
-</body>
-</html>
+
+    // echo "<br>";
+    echo <<<HTML
+    <main class="container">
+            <h1>! usuario Alterado !</h1>
+    </main> 
+
+    HTML;
+    header('refresh: 4; url= /TCC_OFNOGAMES/Model/PHP/Pagina_administrador.php');
+    // echo $_SESSION['tabela'];
+}
+?>

@@ -21,37 +21,38 @@
          <h3>cadastro</h3> 
          <div>
             <label for="nome">Nome:</label>
-            <input type="text" name="nome">
+            <input type="text" name="nome" required>
          </div>
          <br>
          <div>
             <label for="email">E-mail:</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
          </div>
          <br>
          <div>
             <label for="senha">Senha:</label>
-            <input type="password" name="senha">
+            <input type="password" name="senha" required>
          </div>
+         <br>
          <div>
             <label for="tel">Telefone:</label>
             <input type="tel" name="tel">
          </div>
          <br>
-         <input type="submit" value="Login">
+         <input type="submit" value="Cadastrar">
          <br>
-         <div id="not" style="display: none;">
+         <!-- <div id="not" style="display: none;">
             <h3>usuario Não Cadastrado!</h3>
-         </div>
+         </div> -->
       </form>
    <main>
    <footer-site></footer-site>
    <script>
-      const not_sub = document.getElementById('not');
+      // const not_sub = document.getElementById('not');
 
       // console.log(not_sub);
       // not_sub.removeAttribute('style')
-      console.log(window.location);
+      // console.log(window.location);
       // if(window.location.search(form="1") != -1){
       //    // console.log('Funcionou');
       // }

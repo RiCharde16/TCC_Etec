@@ -21,18 +21,16 @@
    <main class="border border-white text-center p-5">
       <form method="POST" action="/TCC_OfNoGames/Model/PHP/login.php">
          <h1>Login</h1> 
-         <div>
-            <label for="nome">Usuario:</label>
-            <input type="text" name="nome">
-         </div>
-         <br>
-         <div>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha">
-         </div>
-         <br>
-         <input type="submit" value="Login">
-         <br>
+            <label for="nome">Usuario:
+               <input type="text" name="nome" required>
+            </label>
+
+            <label for="senha">Senha:
+               <input type="password" name="senha" required>
+            </label>
+
+            <input type="submit" value="Login">
+            <br>
          <a href="/TCC_OFNOGAMES/View/cadastro.html">Não tem uma conta?</a>
          <!-- <div id="g_id_onload"
             data-client_id="132012896010-keem8l8iip3loramee31ar2kle4dv3vb.apps.googleusercontent.com"

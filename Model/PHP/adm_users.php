@@ -44,9 +44,6 @@
     table tbody tr td{
         padding: 2px;
     }
-    table tbody tr:focus-within{
-        border: 1px solid #0f0;
-    }
     button{
         padding: 0px 5px;
         margin: 0px 10px;
@@ -74,8 +71,7 @@
                 <input type="text" id="filter">
                 <img src="/TCC_OfNOGames/View/img/lupa-arredondada.png" alt="lupa.img">
             </div>
-
-            <button id="jogos">Jogos</button>
+            <button id='jogos'>Jogos</button>
             <button id="user">usuarios</button>
             <button id="cad_jogo">Novo Jogo</button>
         </div>
@@ -84,9 +80,9 @@
                 <tr>
                     <th>Id</th>
                     <th>Nome</th>
-                    <th>categoria</th>
-                    <th>image</th>
-                    <th>Url</th>
+                    <th>Email</th>
+                    <th>Senha</th>
+                    <th>telefone</th>
                     <th colspan="3">descrição</th>
                 </tr>
             </thead> 
@@ -95,29 +91,34 @@
                 include('./conection.php');
                 
                 // echo "Teste";
-                $tabela_jogos = $con->prepare("SELECT * FROM jogos");
                 $tabela_usuario = $con->prepare("SELECT * FROM usuario");
                 
-                $tabela_jogos->execute();
+                $tabela_usuario->execute();
                 echo "<tbody id='jogos'>";
-                while($linha = $tabela_jogos->fetch(PDO::FETCH_ASSOC)){
-                        $id_jogo = $linha['id_jogo'];
-                        $nome_jogo = $linha['nome'];
-                        $cat_jogo = $linha['categoria'];
-                        $img_jogo = $linha['imagem'];
-                        $url_jogo = $linha['url'];
-                        $desc_jogo = $linha['descricao'];
+                while($linha = $tabela_usuario->fetch(PDO::FETCH_ASSOC)){
+                        $id = $linha['id_user'];
+                        $nome = $linha['nome'];
+                        $email = $linha['email'];
+                        $senha = $linha['senha'];
+                        $tel = $linha['telefone'];
+                        $id_tipo = $linha['id_tipo'];
+
+                        if($id_tipo == 1){
+                            $tipo_user = "Administrador";
+                        }else{
+                            $tipo_user = "Usuario";
+                        }
 
                         $html = <<<HTML
                             <tr>
-                                <td>$id_jogo</td>
-                                <td>$nome_jogo</td>
-                                <td>$cat_jogo</td>
-                                <td>$img_jogo</td>
-                                <td>$url_jogo</td>
-                                <td>$desc_jogo</td>
-                                <td> <button class="exc" dado="$id_jogo" tabela="jogos">Excluir</button> </td>
-                                <td> <button class="alt" dado="$id_jogo" tabela="jogos">Alterar</button> </td>
+                                <td>$id</td>
+                                <td>$nome</td>
+                                <td>$email</td>
+                                <td>$senha</td>
+                                <td>$tel</td>
+                                <td>$tipo_user</td>
+                                <td> <button class="exc" dado="$id" tabela="usuario">Excluir</button> </td>
+                                <td> <button class="alt" dado="$id" tabela="usuario">Alterar</button> </td>
                             </tr>
                         HTML;
 

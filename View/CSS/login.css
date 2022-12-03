@@ -2,11 +2,28 @@
     margin: 0;
     padding: 0;
 }
+label{
+    padding: 20px 0px;
+}
+form h3{
+    text-transform: uppercase;
+    margin: 25px 0px;
+}
+a{
+    color: #fff;
+}
+a:hover{
+    color: #999;
+}
+a:active{
+    color: #f0f;
+}
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: right;
     /* padding: 50px; */
     margin: 50px auto;
     width: 500px;

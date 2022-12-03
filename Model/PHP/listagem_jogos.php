@@ -21,19 +21,17 @@
                 background-color: #000; 
             }
             .grid{
+                margin: 50px auto 0px auto;
                 display: grid;
                 /* background-color: #0f0; */
+                padding: 0px 80px;
                 grid-template-columns: auto auto auto;
             }
             .jogo{
                 cursor: pointer;
-                width: 100px;
+                /* width: 100px; */
                 /* margin: 100px 0px; */
-                transition: 0.5s ease-in-out;
-
-            }
-            .jogo:hover{
-                transform: scale(1.1);
+                /* transition: 0.5s ease-in-out; */
             }
             #footer{
                 /* position: absolute;
@@ -60,8 +58,16 @@
             }
             else if($nome_jogo != null){
                 $sql = $con->prepare("SELECT * FROM jogos WHERE nome LIKE '%$nome_jogo%' ");
-                
-                $sucess = $sql->execute();
+                $verificacao = $con->prepare("SELECT * FROM jogos WHERE nome LIKE '%$nome_jogo%' ");
+
+                $verificacao = $verificacao->fetchColumn();
+
+                if($verificacao < 0){
+                    echo "Nenhum jogo";
+                }else{
+
+                    $sucess = $sql->execute();
+                }
             }
             else{
                 $sql = $con->prepare("SELECT * FROM jogos");
@@ -73,7 +79,7 @@
                 $idJogo = $row['id_jogo'];
                 $nome = $row['nome'];
                 $categoria = $row['categoria'];
-                $descricao = $row['descricao'];
+                // $descricao = $row['descricao'];
                 $img = $row['imagem'];
                 
                 $card = <<<card
@@ -92,14 +98,6 @@
                 // echo "</html>";
             ?>
     </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
     <footer-site id="footer"></footer-site>
     <script src="/TCC_OFNOGAMES/Controller/javascript/jogo_link.js"></script>
     <script src="/TCC_OFNOGAMES/Controller/javascript/menu.js"></script>

@@ -117,6 +117,7 @@ class Footer extends HTMLElement
             filter: contrast(20%);
         }
         footer{
+            margin-top: 200px;
             text-align: center;
             padding: 10px;
         }

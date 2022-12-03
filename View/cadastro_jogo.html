@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfNoGames</title>
+    <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/style.css">
+    <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/login.css">
+    <script src="/TCC_OFNOGAMES/View/src/components/Header.js" defer></script>
+    <script src="/TCC_OFNOGAMES/View/src/components/footer.js" defer></script>
+</head>
+<style>
+    form div{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    form label{
+        padding: 10px;
+    }
+    #desc{
+        display: flex;
+    }
+    #Envio{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        scroll-behavior: none;
+        position: absolute;
+        background-color: #000;
+        top: 0;
+        margin: 0;
+        z-index: 2;
+    }
+    #Envio h1{
+        font-size: 35px;
+    }
+    textarea{
+        resize: none;
+    }
+    input[type='file']{
+        margin: 15px 0px;
+    }
+</style>
+<body>
+    <header-jogo></header-jogo>
+    <main>
+        <form action="/TCC_OFNOGAMES/Model/PHP/cadastro_jogo.php" method="POST" enctype="multipart/form-data">
+            <h1>Cadastro Jogo</h1>
+            <div>
+                <label for="nome">Nome:
+                    <input type="text" name="nome">
+                </label>
+                <label for="categoria">categoria:
+                    <select name="categoria">
+                        <option value="Aventura">Aventura</option>
+                        <option value="Ação">Ação</option>
+                        <option value="RPG">RPG</option>
+                        <option value="Party Game">Party Game</option>
+                        <option value="Esportes">Esportes</option>
+                    </select>
+                </label>
+                <br>
+                <label for="url">URL:
+                    <input type="url" name="url">
+                </label>
+                <div id="desc">
+                    <label for="desc">Descrição:</label>
+                    <textarea name="desc"></textarea>
+                </div>
+                <label for="img">Imagem: 
+                    <input type="file" name="img" required accept="image/">
+                </label>
+            </div>
+            <!-- <br> -->
+            <input type="submit" value="Cadastrar">
+        </form>
+    </main>
+    <footer-site id="footer-site"></footer-site>
+    <section id="Envio">
+        <h1> !Jogo Cadastrado!</h1>
+    </section>
+    <script src="/Controller/javascript/formulario_Envio.js"></script>
+</body>
+</html>

@@ -9,28 +9,92 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/sobre_style.css">
     <link rel="stylesheet" href="./CSS/menu_style.css">
+
+    <!-- <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/login.css"> -->
     <script src="./src/components/Menu.js"></script>
     <script src="./src/components/Header.js"></script>
     <script src="./src/components/footer.js"></script>
+    <style>
+        form{
+            width: 500px;
+            height: 350px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 20px;  
+            margin: 55px auto 0px auto;
+        }
+        input[type="submit"]{
+            /* border: none; */
+            width: 150px;
+            height: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 1px solid #fff;
+            color: #fff;
+            background-color: black;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            color: #000;            
+            background-color: #fff;
+        }
+        textarea{
+            height: 80px;
+            resize: none;
+        }
+        form div{
+            display: flex;
+            justify-content: center;
+            /* flex-direction: column; */
+        }
+        form h2{
+            text-transform: uppercase;
+            margin: 20px 0px;
+        }
+        #Envio{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            scroll-behavior: none;
+            position: absolute;
+            background-color: #000;
+            top: 0;
+            margin: 0;
+            z-index: 2;
+        }
+        #Envio h1{
+            font-size: 35px;
+        }
+    </style>
 </head>
 <body>
     <menu-site></menu-site>
     <header-jogo></header-jogo>
     <main>
         <form method="POST" action="/TCC_OfNoGames/Model/">
-            <h2>Ajuda</h2>
+            <h2>Ajuda</h2   >
             <label for="nome">Nome</label>
-            <input type="text" name="nome">
+            <input type="text" name="nome" required>
             <br>
             <br>
             <label for="email">E-mail</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
             <br>
             <br>
-            <label for="coment">comentario</label>
-            <textarea name="coment"></textarea>
+            <div>
+                <label for="coment">problema:</label>
+                <textarea name="coment" required></textarea>
+            </div>
+            <input type="submit">
         </form>
     </main>
-    <footer-site></footer-site>
+    <section id="Envio">
+        <h1> !Formulario Enviado!</h1>
+    </section>
+    <footer-site id="footer-site"></footer-site>
+    <script src="/TCC_OFNOGAMES/Controller/javascript/formulario_Envio.js"></script>
 </body>
 </html>
