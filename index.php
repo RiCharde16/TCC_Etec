@@ -82,7 +82,6 @@
                                 <card-jogo class="jogo"
                                     photo="$img"
                                     titulo-jogo="$nome"
-                                    descricao="$descricao"
                                     chave="$idJogo"
                                 ></card-jogo>
                         card;
