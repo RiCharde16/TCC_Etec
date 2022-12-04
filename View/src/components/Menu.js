@@ -54,29 +54,41 @@ class Menu extends HTMLElement
         lista.appendChild(li_puzzle);
 
         const link_chat1 = document.createElement('a');
-        link_chat1.textContent = "Chat1"
+        link_chat1.textContent = "Chat1";
+        link_chat1.href = "/TCC_OFNOGAMES/View/chat_pagina.html";
+
         const link_acao = document.createElement('a');
-        link_acao.textContent = "Ação"
+        link_acao.textContent = "Ação";
+        link_acao.href = "/TCC_OFNOGAMES/View/chat_pagina.html"
+
         const link_aventura = document.createElement('a');
-        link_aventura.textContent = "Aventura"
+        link_aventura.textContent = "Aventura";
+        link_aventura.href = "/TCC_OFNOGAMES/View/chat_pagina.html"
+
         const link_esport = document.createElement('a');
-        link_esport.textContent = "Esportes"
+        link_esport.textContent = "Esportes";
+
         const link_rpg = document.createElement('a');
-        link_rpg.textContent = "RPG"
+        link_rpg.textContent = "RPG";
+        link_rpg.href = "/TCC_OFNOGAMES/View/chat_pagina.html"
+
         const link_party = document.createElement('a');
-        link_party.textContent = "Party Games"
+        link_party.textContent = "Party Games";
+        link_party.href = "/TCC_OFNOGAMES/View/chat_pagina.html"
+
         const link_puzzle = document.createElement('a');
-        link_puzzle.textContent = "Puzzle"
+        link_puzzle.textContent = "Puzzle";
+        link_puzzle.href = "/TCC_OFNOGAMES/View/chat_pagina.html"
 
-        li_chat1.appendChild(link_chat1)
-        li_Acao.appendChild(link_acao)
-        li_esport.appendChild(link_esport)
-        li_aventura.appendChild(link_aventura)
-        li_rpg.appendChild(link_rpg)
-        li_party.appendChild(link_party)
-        li_puzzle.appendChild(link_puzzle)
+        li_chat1.appendChild(link_chat1);
+        li_Acao.appendChild(link_acao);
+        li_esport.appendChild(link_esport);
+        li_aventura.appendChild(link_aventura);
+        li_rpg.appendChild(link_rpg);
+        li_party.appendChild(link_party);
+        li_puzzle.appendChild(link_puzzle);
 
-        pages.appendChild(lista)
+        pages.appendChild(lista);
 
         componentRoot.appendChild(btn_close);
         componentRoot.appendChild(circle);
@@ -145,6 +157,7 @@ class Menu extends HTMLElement
             margin: 0px 0px 0px 15px;
         }
         a{
+            text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
         }

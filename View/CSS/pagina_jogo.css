@@ -10,9 +10,12 @@ iframe{
     height: 900px;
     /* scroll-margin-left: none; */
 }
+
 body{
     background-color: #000;
     color: #fff;
+    background-image: url(/TCC_OFNOGAMES/View/img/simbolos.svg);
+    background-position: center;
 }
 .scroll-escondido{
     width: 880px;

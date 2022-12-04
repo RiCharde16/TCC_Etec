@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="/TCC_OFNOGAMES/View/img/Logo_OFNOGAMES.png" type="image/x-icon">
         <!-- <link rel="stylesheet" href="../CSS/tabela.css"/> -->
         <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/menu_style.css">
-        <link rel="stylesheet" href="/TCC_OFNOGAMES//View/CSS/style.css" type="text/css">
+        <!-- <link rel="stylesheet" href="/TCC_OFNOGAMES//View/CSS/style.css" type="text/css"> -->
         <script src="/TCC_OFNOGAMES//View/src/components/cardJogo.js" defer></script>
         <script src="/TCC_OFNOGAMES/View/src/components/Header.js" defer></script>
         <script src="/TCC_OFNOGAMES/View/src/components/Menu.js" defer></script>
@@ -27,6 +27,7 @@
                 display: grid;
                 padding: 0px 106px;
                 grid-template-columns: auto auto auto auto;
+                
             }
             .jogo{
                 cursor: pointer;

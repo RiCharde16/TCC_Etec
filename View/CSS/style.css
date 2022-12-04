@@ -7,6 +7,8 @@ body{
     background-color: #000;
     color: #fff;
     font-family: sans-serif;
+    background-image: url(/TCC_OFNOGAMES/View/img/simbolos.svg);
+    background-position: center;
 }
 
 .container{
@@ -88,7 +90,9 @@ p span{
     display: flex;
     /* justify-content: space-around; */
     justify-content: space-between;
-    /* width: 100%;  */
+    align-items: center;
+    margin: 0px auto;
+    width: 55vw; 
     transform: translateY(-240px);
 }
 

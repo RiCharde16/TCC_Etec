@@ -5,6 +5,13 @@ main{
 h1{
     text-transform: uppercase;
 }
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    background-image: url(/TCC_OFNOGAMES/View/img/simbolos.svg);
+    background-position: center;
+}
 footer{
     /* position: relative; */
     bottom: 0;
