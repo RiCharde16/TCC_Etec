@@ -23,30 +23,38 @@
     #desc{
         display: flex;
     }
-    #Envio{
-        display: none;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        scroll-behavior: none;
-        position: absolute;
-        background-color: #000;
-        top: 0;
-        margin: 0;
-        z-index: 2;
-    }
     input[type="file"]{
         border: none;
     }
-    #Envio h1{
-        font-size: 35px;
-    }
     textarea{
+        background-color: #000;
+        width: 250px;
+        height: 50px;
         resize: none;
+        color: #fff;
     }
     input[type='file']{
         margin: 15px 0px;
+    }
+    select{
+        background-color: #6110A1;
+        border: 1px solid #222;
+        width: 160px;
+        border-radius: 40px;
+        appearance: none;
+        background-image: url(/TCC_OFNOGAMES/View/img/question-404.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: 96% 2px;
+        padding: 5px;
+        color: #fff;
+    }
+    option:hover{
+        background-color: #909;
+        color: #fff;
+    }
+    select:focus{
+        offset: o;
     }
 </style>
 <body>
@@ -84,9 +92,6 @@
         </form>
     </main>
     <footer-site id="footer-site"></footer-site>
-    <section id="Envio">
-        <h1> !Jogo Cadastrado!</h1>
-    </section>
     <script src="/Controller/javascript/formulario_Envio.js"></script>
 </body>
 </html>

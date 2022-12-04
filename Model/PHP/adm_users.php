@@ -18,7 +18,7 @@
         border-radius: 50px;
         align-items: center;
         background-color: #fff;
-        width: 200px;
+        width: 225px;
         height: 30px;
         padding: 20px;
         justify-content: center;
@@ -34,9 +34,11 @@
         rotate: 100deg;
     }
     .buscar input{
+        width: 220px;
         border: none;
         text-align: left;
         padding: 5px;
+        margin: 0px 10px 0px 0px;
     }
     .buscar input:focus{
         box-shadow: 0 0 0 0;
