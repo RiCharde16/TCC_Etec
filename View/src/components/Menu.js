@@ -67,6 +67,7 @@ class Menu extends HTMLElement
 
         const link_esport = document.createElement('a');
         link_esport.textContent = "Esportes";
+        link_esport.href = "/TCC_OFNOGAMES/View/chat_pagina.html";
 
         const link_rpg = document.createElement('a');
         link_rpg.textContent = "RPG";
