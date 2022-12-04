@@ -17,10 +17,12 @@
             *{
                 padding: 0;
                 margin: 0;
+                font-family: sans-serif;
             }
             body{
                 background-color: #000; 
                 color: #fff;
+
             }
             .grid{
                 margin: 50px auto 0px auto;
@@ -42,7 +44,7 @@
                 margin: 69px 0px;
                 position: relative;
                 width: 80vw;
-                heigth: 20ovh;
+                height: 16vh;
                 justify-content: center;
                 align-items: center;
                 text-transform: uppercase;

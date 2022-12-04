@@ -114,7 +114,7 @@ class Footer extends HTMLElement
             cursor: pointer;
         }
         .icon-social:hover{
-            filter: contrast(20%);
+            transform: scale(1.1)
         }
         footer{
             margin-top: 200px;
