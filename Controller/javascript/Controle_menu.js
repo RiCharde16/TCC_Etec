@@ -1,4 +1,4 @@
-// Component Header
+// Component header
 const header = document.querySelector('header-jogo')
 const menu_icon = header.shadowRoot.querySelector('#icon-menu')
 const lupa = header.shadowRoot.querySelector('#search');
@@ -34,19 +34,6 @@ pesquisa_header.addEventListener('keydown',(e)=>{
 })
 
 // Aba de Menu
-pesquisa_menu.addEventListener('keydown',(e)=>{
-    nome_jogo = e.target.value
-
-    // Se prencionar a lupa ira pesquisar
-    lupa_menu.addEventListener('click',(e)=>{
-        window.location = `/TCC_OFNOGAMES/Model/PHP/listagem_jogos.php?nome=${nome_jogo}`;
-
-    })
-    // Se presionar enter tbm ira pesquisar
-    if(e.key == "Enter"){
-        window.location = `/TCC_OFNOGAMES/Model/PHP/listagem_jogos.php?nome=${nome_jogo}`;
-    }
-})
 
 menu_icon.addEventListener('click',()=>{
     // alert('Teste');
@@ -56,5 +43,3 @@ menu_icon.addEventListener('click',()=>{
 btn_close.addEventListener('click',()=>{
     menu_col.style.transform = "translateX(-500px)"
 })
-
-

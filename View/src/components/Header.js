@@ -162,10 +162,8 @@ class Header extends HTMLElement
             background-color: #fff;
         }
         #buscar > input{
-            padding: 2px 10px;
             width: 200px;
-            /*text-align: right;*/
-            text-align: left;
+            text-align: right;
             border: none;
         }
         div{
@@ -180,6 +178,9 @@ class Header extends HTMLElement
             width: 25px;
             padding: 2px;
             rotate: 450deg;
+        }
+        #buscar > img:hover{
+            cursor: pointer;
         }
         input[type="search"]::-webkit-search-cancel-button{
             display: none;

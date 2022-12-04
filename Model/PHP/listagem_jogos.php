@@ -20,6 +20,7 @@
             }
             body{
                 background-color: #000; 
+                color: #fff;
             }
             .grid{
                 margin: 50px auto 0px auto;
@@ -29,6 +30,21 @@
             }
             .jogo{
                 cursor: pointer;
+            }
+            #notfound img{
+                width: 140px;
+                height: 100px;
+                padding: 0px 20px;
+            }
+            #notfound{
+                display: flex;
+                margin: 69px 0px;
+                position: relative;
+                width: 80vw;
+                heigth: 20ovh;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
             }
         </style>
 </head>
@@ -55,12 +71,20 @@
                 $sql = $con->prepare("SELECT * FROM jogos WHERE nome LIKE '%$nome_jogo%' ");
                 $verificacao = $con->prepare("SELECT * FROM jogos WHERE nome LIKE '%$nome_jogo%' ");
 
+                $verificacao->execute();
+
                 $verificacao = $verificacao->fetchColumn();
 
-                if($verificacao < 0){
-                    echo "Nenhum jogo";
-                }else{
+                if($verificacao == null || $verificacao == ""){
+                    echo <<<JOGO
+                    <div id="notfound">
+                        <img src="/TCC_OFNOGAMES/View/img/question-404.png">
+                        <h1>Jogo não encontrado</h1>
+                        <img src="/TCC_OFNOGAMES/View/img/question-404.png">
+                    </div>
+                    JOGO;
 
+                }else{
                     $sucess = $sql->execute();
                 }
             }
@@ -89,7 +113,6 @@
                 
                 echo $card;
             }
-
                 // echo "</html>";
             ?>
     </div>

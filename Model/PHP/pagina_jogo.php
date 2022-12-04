@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OFNO Games</title>
     <link rel="shortcut icon" href="/TCC_OFNOGAMES/View/img/Logo_OFNOGAMES.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/TCC_OFNOGAMES/View/img/Logo_OFNOGAMES.png" type="image/x-icon">
     <link rel="stylesheet" href="/TCC_OFNOGAMES//View/CSS/pagina_jogo.css">
     <!-- <script src="./src/components/tela_jogo.js" defer></script> -->
     <script src="/TCC_OFNOGAMES/View/src/components/Menu.js" defer></script>

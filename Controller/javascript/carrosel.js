@@ -15,7 +15,6 @@ seta_prox.addEventListener('click', function(){
     else if(slide1.style.marginLeft == "-"+x+"px" && slide1.style.marginLeft != "-2405px"){
         x += 800;
         slide1.style.marginLeft = "-"+x+"px"
-        console.log(slide1.style.marginLeft)
     }
     else{
         slide1.style.transition = "2s";
@@ -46,7 +45,6 @@ let temp = setInterval(()=>{
     else if(slide1.style.marginLeft == "-"+x+"px" && slide1.style.marginLeft != "-2405px"){
         x += 800;
         slide1.style.marginLeft = "-"+x+"px"
-        console.log(slide1.style.marginLeft)
     }
     else{
         slide1.style.transition = "2s";

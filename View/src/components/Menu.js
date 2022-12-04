@@ -16,9 +16,15 @@ class Menu extends HTMLElement
         const btn_close = document.createElement('h1');
         btn_close.textContent = "X"
         btn_close.setAttribute('id','btn_close');
+
+        const circle = document.createElement('div');
+        const foto_user = document.createElement('img');
+        foto_user.src = "/TCC_OFNOGAMES/View/img/img_devs/default.jpg"
+        circle.setAttribute('id','circle');
+        circle.appendChild(foto_user);
+
         const inputRoot = document.createElement('div');
         inputRoot.setAttribute('id','buscar');
-
         const input = document.createElement('input');
         input.type = "search";
         const  img_lupa = document.createElement('img');
@@ -27,23 +33,53 @@ class Menu extends HTMLElement
         inputRoot.appendChild(input);
         inputRoot.appendChild(img_lupa);
 
+
         const pages = document.createElement('div');
         pages.setAttribute('id','pages')
-        const link_jogos = document.createElement('a');
-        link_jogos.textContent = "Jogos"
-        const link_login = document.createElement('a');
-        link_login.textContent = "Login"
-        const link_sobre = document.createElement('a');
-        link_sobre.textContent = "Sobre"
-        const link_ajuda = document.createElement('a');
-        link_ajuda.textContent = "Ajuda"
+        const lista = document.createElement('ul');
+        const li_chat1 = document.createElement('li');
+        const li_Acao = document.createElement('li');
+        const li_aventura = document.createElement('li');
+        const li_esport = document.createElement('li');
+        const li_rpg = document.createElement('li');
+        const li_party = document.createElement('li');
+        const li_puzzle = document.createElement('li');
 
-        pages.appendChild(link_jogos)
-        pages.appendChild(link_login)
-        pages.appendChild(link_sobre)
-        pages.appendChild(link_ajuda)
+        lista.appendChild(li_chat1);
+        lista.appendChild(li_Acao);
+        lista.appendChild(li_aventura);
+        lista.appendChild(li_esport);
+        lista.appendChild(li_rpg);
+        lista.appendChild(li_party);
+        lista.appendChild(li_puzzle);
+
+        const link_chat1 = document.createElement('a');
+        link_chat1.textContent = "Chat1"
+        const link_acao = document.createElement('a');
+        link_acao.textContent = "Ação"
+        const link_aventura = document.createElement('a');
+        link_aventura.textContent = "Aventura"
+        const link_esport = document.createElement('a');
+        link_esport.textContent = "Esportes"
+        const link_rpg = document.createElement('a');
+        link_rpg.textContent = "RPG"
+        const link_party = document.createElement('a');
+        link_party.textContent = "Party Games"
+        const link_puzzle = document.createElement('a');
+        link_puzzle.textContent = "Puzzle"
+
+        li_chat1.appendChild(link_chat1)
+        li_Acao.appendChild(link_acao)
+        li_esport.appendChild(link_esport)
+        li_aventura.appendChild(link_aventura)
+        li_rpg.appendChild(link_rpg)
+        li_party.appendChild(link_party)
+        li_puzzle.appendChild(link_puzzle)
+
+        pages.appendChild(lista)
 
         componentRoot.appendChild(btn_close);
+        componentRoot.appendChild(circle);
         componentRoot.appendChild(inputRoot);
         componentRoot.appendChild(pages);
 
@@ -52,11 +88,10 @@ class Menu extends HTMLElement
 
     scripts(){
         const script = document.createElement('script');
-        script.src = "/TCC_OfNoGames/Controller/Controle_menu.js";
+        script.src = "/TCC_OFNOGAMES/Controller/javascript/Controle_menu.js";
 
         return script;
     }
-
     styles(){
         const style_menu = document.createElement('style');
 
@@ -73,12 +108,21 @@ class Menu extends HTMLElement
             top: 0;
             transform: translateX(-500px);
             height: 100%;  
-            opacity: 90%;
+            opacity: 95%;
             background-color: #1a0721;
             padding: 15px;
             z-index: 5;
             transition: 1s ease-in-out;
             overflow: hidden;
+        }
+        #circle{
+            display: flex;
+            overflow: hidden;
+            width: 120px;
+            height: 120px;
+            background-color: #fff;
+            margin: 0px auto;
+            border-radius: 50%;
         }
         #btn_close{
             position: relative;
@@ -94,8 +138,18 @@ class Menu extends HTMLElement
             display: flex;
             flex-direction: column;
         }
+        #menu_column div li{
+            padding: 10px 0px;
+        }
+        ul{
+            margin: 0px 0px 0px 15px;
+        }
+        a{
+            text-transform: uppercase;
+            cursor: pointer;
+        }
         #menu_column div a:hover{
-            color: purple;
+            color: #f0f;
         }
         #btn_close{
             color: #fff;
@@ -105,10 +159,10 @@ class Menu extends HTMLElement
 
         div#buscar{ 
             display: flex;
-            width: 180px;
+            width: 190px;
             align-items: center;
             padding: 2px;
-            height: 40px;
+            height: 35px;
             margin: 20px auto;
             border: 1px solid #000;
             border-radius: 50px;

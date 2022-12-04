@@ -1,3 +1,85 @@
-main{
-    /* height: 500px; */
+#chat{
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    background-color: none;
+    margin: 0px 0px 15px 0px;
+    border: 1px solid #7E37B6;
+}
+/* Estilização do scrool do chat */
+#chat::-webkit-scrollbar-track{
+    background-color: rgb(248, 0, 0,0);
+}
+#chat::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    width: 15px;
+}
+#chat::-webkit-scrollbar-thumb {
+    padding: 10px;
+    background-color: #7E37B6;    /* color of the scroll thumb */
+    border-radius: 25px;       /* roundness of the scroll thumb */
+    border: 5px solid #000;  /* creates padding around scroll thumb */
+}
+/* Balões de fala no chat */
+.user1 p , .user2 p{
+    margin: 0;
+    width: fit-content;
+    text-align: left;
+}
+.user1{
+    margin: 10px 0px 0px 0px;
+    width: 200px;
+    text-align: left;
+    padding: 8px 15px;
+    border-radius: 15px;
+    background-color: #7E37B6;
+}
+.user2{
+    margin: 10px 0px 0px auto;
+    top: 10px;
+    right: 0px;
+    width: 200px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    background-color: #7E37B6;
+}
+/* Parte de enviar mensagens */
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    /* background-color: #000; */
+}
+#inputRoot{
+    background-color: #fff;
+    /* width: 500px; */
+    padding: 0px 25px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0px 0px 0px auto;
+}
+#areaM{
+    width: 100%;
+    height: 100px;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+}
+input[type="text"]{
+    font-size: 16px;
+    border: none;
+    width: 400px;
+}
+input:focus{
+    border: none;
+    outline: 0;
 }
