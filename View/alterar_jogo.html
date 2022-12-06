@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OFNO Games</title>
+    <!-- Componentes -->
+    <script src="/TCC_OFNOGAMES/View/src/components/Header.js" defer></script>
+    <script src="/TCC_OFNOGAMES/View/src/components/Menu.js" defer></script>
+    <script src="/TCC_OFNOGAMES/View/src/components/footer.js" defer></script>
+    <!-- Links CSS -->
     <link rel="shortcut icon" href="/TCC_OFNOGAMES/View/img/Logo_OFNOGAMES.png" type="image/x-icon">
     <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/style.css">
     <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/login.css">
@@ -15,18 +20,47 @@
         flex-direction: column;
         align-items: baseline;
     }
+    form{
+        margin: 8% auto 0px auto;
+    }
     label{
         margin: 0;
         padding: 10px;
     }
     textarea{
+        color: #fff;
+        background-color: #000;
         resize: none;
     }
     label[for='desc']{
         display: flex;
     }
+    input[type="file"]{
+        border:none;
+    }
+    input[type="submit"]{
+        margin: 10px 0px;
+    }
+    select{
+        background-color: #6110A1;
+        border: 1px solid #222;
+        width: 160px;
+        border-radius: 40px;
+        appearance: none;
+        background-image: url(/TCC_OFNOGAMES/View/img/question-404.png);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        background-position: 96% 2px;
+        padding: 5px;
+        color: #fff;
+    }
+    select:focus{
+        offset: o;
+    }
 </style>
 <body>  
+    <header-jogo></header-jogo>
+    <menu-site></menu-site>
     <form action="/TCC_OFNOGAMES/Model/PHP/alterar.php" method="POST" enctype="multipart/form-data">
         <h1>Alterar Dados</h1>
         <div>
@@ -58,3 +92,6 @@
         </div>
         <input type="submit" value="Alterar">
     </form>
+    <footer-site></footer-site>
+</body>
+</html>

@@ -41,7 +41,7 @@
                     <div class="block">
                         <h1 id="titulo">$titulo_jogo</h1>
                     </div>
-                    <iframe src="$url" frameborder="0"></iframe>
+                    <iframe src="$url" frameborder="0" scrolling="no"></iframe>
                     <!-- <iframe src="https://www.jogos360.com.br/bad_ice_cream_2.html" frameborder="0"></iframe> -->
                     </div>
                     <div class="block-2">

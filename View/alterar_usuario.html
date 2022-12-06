@@ -5,11 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OFNO Games</title>
+    <!-- Componentes -->
+    <script src="/TCC_OFNOGAMES/View/src/components/Header.js" defer></script>
+    <script src="/TCC_OFNOGAMES/View/src/components/Menu.js" defer></script>
+    <script src="/TCC_OFNOGAMES/View/src/components/footer.js" defer></script>
+    <!-- Link CSS -->
     <link rel="shortcut icon" href="/TCC_OFNOGAMES/View/img/Logo_OFNOGAMES.png" type="image/x-icon">
     <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/style.css">
     <link rel="stylesheet" href="/TCC_OFNOGAMES/View/CSS/login.css">
+    <style>
+        form{
+            margin: 7% auto 0px auto;
+        }
+    </style>
 </head>
 <body>  
+    <header-jogo></header-jogo>
+    <menu-site></menu-site>
     <form action="/TCC_OFNOGAMES/Model/PHP/alterar.php" method="POST">
         <h1>Alterar Dados</h1>
         <!-- <div> -->
@@ -28,3 +40,6 @@
         <!-- </div> -->
         <input type="submit" value="Alterar">
     </form>
+    <footer-site></footer-site>
+</body>
+</html>

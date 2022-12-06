@@ -1,0 +1,5 @@
+Nome: Donkey kong 64 - Site: https://www.retrogames.cc/n64-games/donkey-kong-64-usa.html - imagem: /img_jogos/donkey-kong-64.png
+
+Nome: Donald Duck 64 - Site: https://www.retrogames.cc/n64-games/donald-duck-goin-quackers-usa-en-fr-de-es-it.html - imagem: /img_jogos/donald-64.png
+
+Nome: Paper Mario 64 - Site: https://www.retrogames.cc/n64-games/paper-mario-multiplayer-1-2.html - Imagem: /img_jogos/Img_paper_mario.png
