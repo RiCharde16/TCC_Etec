@@ -44,6 +44,7 @@
     padding: 8px 15px;
     border-radius: 15px;
     background-color: #7E37B6;
+    word-break: break-all
 }
 /* Parte de enviar mensagens */
 .circle{

@@ -34,6 +34,7 @@ class Header extends HTMLElement
         link_logo.href = "/TCC_OFNOGAMES/index.php"
         img_logo.src = this.getAttribute('dir-log') || "/TCC_OFNOGAMES/View/img/Logo_OFNOGAMES.png";
         img_logo.setAttribute('id','logo')
+        img_logo.title = "OFNO GAMES"
         // navegation.appendChild(img_logo);
         navegation.appendChild(link_logo);
 
